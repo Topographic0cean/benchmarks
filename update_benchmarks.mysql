@@ -1,0 +1,286 @@
+#!python 
+
+import sys
+import re
+import mysql.connector
+
+
+prev_line = ""
+
+def get_line(file):
+    global prev_line
+    if prev_line != "":
+        ret = prev_line
+        prev_line = ""
+#print("PREV LINE ",ret)
+        return ret
+    while True:
+        line = file.readline()
+        line = line.lstrip().rstrip()
+        if line != '':
+#print("LINE ",line)
+            return line
+
+def remove_string(rem, str):
+    return re.sub(rem,'',str,flags=re.IGNORECASE).lstrip().rstrip()
+
+def expect_line(rem, str, default = ""):
+    global prev_line
+#print('EXPECT ',rem)
+    if rem.lower() in str.lower():
+        prev_line = ''
+        return remove_string(rem, str)
+    else:
+        prev_line = str
+        return default
+
+def expect_boolean(rem, str, default = ""):
+    global prev_line
+#print('EXPECT ',rem)
+    if rem.lower() in str.lower():
+        prev_line = ''
+        return True
+    else:
+        prev_line = str
+        return False
+
+def make_number(rem, str):
+    num = remove_string(",",expect_line(rem,str))
+    if num == '':
+        num = 0
+    return int(num)
+
+def parse_benchmark(filename):
+    benchmark = {}
+    with open(filename, "r") as file:
+        benchmark['name'] = get_line(file)
+        benchmark['date'] = get_line(file)
+        benchmark['home_build'] = expect_boolean("Home build",get_line(file))
+        benchmark['picture'] = expect_line("Picture",get_line(file))
+        benchmark['description'] = expect_line("Description",get_line(file))
+        benchmark['cpu_name'] = expect_line("model name",get_line(file))
+        benchmark['cpu_speed'] = make_number("cpu MHz",get_line(file))
+        benchmark['l1_size'] = expect_line("l1 cache",get_line(file))
+        benchmark['l2_size'] = expect_line("l2 cache",get_line(file))
+        benchmark['l3_size'] = expect_line("l3 cache",get_line(file))
+        benchmark['ram_size'] = expect_line("RAM",get_line(file))
+        benchmark['ram_type'] = expect_line("RAM Type",get_line(file))
+        benchmark['chipset'] = expect_line("Chipset",get_line(file))
+        benchmark['disk'] = expect_line("Disk",get_line(file))
+        benchmark['video'] = expect_line("video",get_line(file))
+        benchmark['case'] = expect_line("case",get_line(file))
+        benchmark['linux'] = get_line(file)
+        benchmark['gcc'] = get_line(file)
+        benchmark['linebreak'] = get_line(file)
+        benchmark['whetstone'] = make_number("Whetstone",get_line(file))
+        benchmark['dhrystone'] = make_number("dhrystones",get_line(file))
+        benchmark['dhrystonem'] = make_number("dhrystones4c",get_line(file))
+        benchmark['block_write'] = make_number("Block Writes MB/s",get_line(file))
+        benchmark['block_read'] = make_number("Block Reads MB/s",get_line(file))
+        benchmark['l1_speed'] = make_number("L1 Cache MB/s",get_line(file))
+        benchmark['l2_speed'] = make_number("L2 Cache MB/s",get_line(file))
+        benchmark['l3_speed'] = make_number("L3 Cache MB/s",get_line(file))
+        benchmark['ram_speed'] = make_number("Ram MB/s",get_line(file))
+        benchmark['pcmark05'] = make_number("pcmark05",get_line(file))
+        benchmark['pcmark07'] = make_number("pcmark07",get_line(file))
+        benchmark['pcmark10'] = make_number("pcmark10",get_line(file))
+        benchmark['dmark03'] = make_number("3dmark03",get_line(file))
+        benchmark['dmark05'] = make_number("3dmark05",get_line(file))
+        benchmark['dmark06'] = make_number("3dmark06",get_line(file))
+        benchmark['firestrike'] = make_number("firestrike",get_line(file))
+    return benchmark
+
+
+def print_benchmark(benchmark):
+    print(" ")
+    print(">>>>>>  Benchmark   <<<<<")
+    print(f"Name        : {benchmark['name']}")
+    print(f"Date        : {benchmark['date']}")
+    print(f"Home build? : {benchmark['home_build']}")
+    print(f"Picture     : {benchmark['picture']}")
+    print(f"Description : {benchmark['description']}")
+    print(f"CPU         : {benchmark['cpu_name']}")
+    print(f"CPU speed   : {benchmark['cpu_speed']}")
+    print(f"l1_size: {benchmark['l1_size']}")
+    print(f"l2_size: {benchmark['l2_size']}")
+    print(f"l3_size: {benchmark['l3_size']}")
+    print(f"ram_size: {benchmark['ram_size']}")
+    print(f"chipset: {benchmark['chipset']}")
+    print(f"disk: {benchmark['disk']}")
+    print(f"case: {benchmark['video']}")
+    print(f"video: {benchmark['video']}")
+    print(f"linux: {benchmark['linux']}")
+    print(f"gcc: {benchmark['gcc']}")
+    print(f"whetstone: {benchmark['whetstone']}")
+    print(f"dhrystone: {benchmark['dhrystone']}")
+    print(f"dhrystonem: {benchmark['dhrystonem']}")
+    print(f"block_write: {benchmark['block_write']}")
+    print(f"block_read: {benchmark['block_read']}")
+    print(f"l1_speed: {benchmark['l1_speed']}")
+    print(f"l2_speed: {benchmark['l2_speed']}")
+    print(f"l3_speed: {benchmark['l3_speed']}")
+    print(f"ram_speed: {benchmark['ram_speed']}")
+    print(f"pcmark05: {benchmark['pcmark05']}")
+    print(f"pcmark07: {benchmark['pcmark07']}")
+    print(f"pcmark10: {benchmark['pcmark10']}")
+    print(f"dmark03: {benchmark['dmark03']}")
+    print(f"dmark05: {benchmark['dmark05']}")
+    print(f"dmark06: {benchmark['dmark06']}")
+    print(f"firestrike: {benchmark['firestrike']}")
+    print(" ")
+    print(" ")
+
+def insert_component(title, desc, type):
+    global mydb
+    cur = mydb.cursor()
+    sql = f"SELECT id FROM computer_components WHERE title = \"{title}\" AND component_type = \"{type}\""
+    cur.execute(sql)
+    res = cur.fetchall()
+    if res:
+        id = res[0][0]
+        sql = f"UPDATE computer_components SET title = \"{title}\", description = \"{desc}\", component_type = \"{type}\", picture = \"\" WHERE id = {id}"
+    else:
+        sql = f"INSERT INTO computer_components (title,description,picture,component_type) VALUES (\"{title}\", \"{desc}\", \"\", \"{type}\")"
+    cur.execute(sql)
+    mydb.commit()
+
+def insert_ram(title, desc):
+    global mydb
+    type = "RAM"
+    cur = mydb.cursor()
+    sql = f"SELECT id FROM computer_components WHERE title = \"{title}\" AND description = \"{desc}\" AND component_type = \"{type}\""
+    cur.execute(sql)
+    res = cur.fetchall()
+    if res:
+        id = res[0][0]
+        sql = f"UPDATE computer_components SET title = \"{title}\", description = \"{desc}\", component_type = \"{type}\" WHERE id = {id}"
+    else:
+        sql = f"INSERT INTO computer_components (title,description,component_type) VALUES (\"{title}\", \"{desc}\", \"{type}\")"
+    print(sql)
+    cur.execute(sql)
+    mydb.commit()
+
+def insert_computer(benchmark,cpu,video,ram,mainboard,disk,case):
+    global mydb
+    cur = mydb.cursor()
+    cur.execute(f"SELECT id FROM computers WHERE cpu = \"{cpu}\" AND mainboard = \"{mainboard}\"")
+    res = cur.fetchall()
+    build = 0
+    if benchmark['home_build']:
+        build = 1
+    id = 0
+    if res:
+        id = res[0][0]
+        sql = f"UPDATE computers SET date = \"{benchmark['date']}\", home_build = {build}, picture = \"{benchmark['picture']}\", description = \"{benchmark['description']}\",  cpu = {cpu}, video = {video}, `case` = {case}, ram = {ram}, mainboard = {mainboard}, disk = {disk} WHERE id = {id}"
+    else:
+        sql = f"INSERT INTO computers (date,home_build,picture,description,cpu,video,`case`,ram,mainboard,disk) VALUES (\"{benchmark['date']}\", {build}, \"{benchmark['picture']}\", \"{benchmark['description']}\", \"{cpu}\", \"{video}\",\"{case}\", \"{ram}\",\"{mainboard}\",\"{disk}\")"
+    print(sql)
+    cur.execute(sql)
+    mydb.commit()
+    id = cur.lastrowid
+    return id
+
+def insert_benchmark(computer,benchmark):
+    global mydb
+    cur = mydb.cursor()
+    cur.execute(f"SELECT id FROM computer_benchmarks WHERE computer_id = \"{computer}\" AND date = \"{benchmark['date']}\"")
+    res = cur.fetchall()
+    sql = ""
+    if res:
+        id = res[0][0]
+        sql = f"UPDATE computer_benchmarks SET id = {id}, computer_id = {computer}, whetstones = {benchmark['whetstone']}, dhrystones = {benchmark['dhrystone']}, dhrystones4way = {benchmark['dhrystonem']}, disk_read = {benchmark['block_read']}, disk_write = {benchmark['block_write']}, l1 = {benchmark['l1_speed']}, l2 = {benchmark['l2_speed']}, l3 = {benchmark['l3_speed']}, ram = {benchmark['ram_speed']}, pcmark05 = {benchmark['pcmark05']}, pcmark07 = {benchmark['pcmark07']}, pcmark10 = {benchmark['pcmark10']}, dmark03 = {benchmark['dmark03']}, dmark05 = {benchmark['dmark05']}, dmark06 = {benchmark['dmark06']}, dmarkfire = {benchmark['firestrike']}, date = \"{benchmark['date']}\" WHERE id = {id}"
+    else:
+        sql = f"INSERT INTO computer_benchmarks (computer_id,whetstones,dhrystones,dhrystones4way,disk_read,disk_write,l1,l2,l3,ram,pcmark05,pcmark07,pcmark10,dmark03,dmark05,dmark06,dmarkfire,date) VALUES ( {computer}, {benchmark['whetstone']},  {benchmark['dhrystone']},  {benchmark['dhrystonem']},  {benchmark['block_write']},  {benchmark['block_read']},  {benchmark['l1_speed']}, {benchmark['l2_speed']}, {benchmark['l3_speed']}, {benchmark['ram_speed']}, {benchmark['pcmark05']}, {benchmark['pcmark07']}, {benchmark['pcmark10']}, {benchmark['dmark03']}, {benchmark['dmark05']}, {benchmark['dmark06']}, {benchmark['firestrike']}, \"{benchmark['date']}\")"
+    print(sql)
+    cur.execute(sql)
+    mydb.commit()
+
+
+
+def make_components(benchmark):
+    desc = f"{benchmark['cpu_speed']} MHz, L1: {benchmark['l1_size']}, L2: {benchmark['l2_size']}, L3: {benchmark['l3_size']}"
+    if benchmark['cpu_name'] != '': 
+        insert_component(benchmark['cpu_name'],desc,'CPU')
+    if benchmark['ram_type'] != '' or benchmark['ram_size'] != '':
+        if benchmark['ram_type'] == '':
+            benchmark['ram_type'] = ''
+        insert_ram(benchmark['ram_type'],benchmark['ram_size'])
+    if benchmark['name'] != '':
+        insert_component(benchmark['name'],benchmark['chipset'],'Mainboard')
+    if benchmark['disk'] != '':
+        insert_component(benchmark['disk'],'','disk')
+    if benchmark['video'] != '':
+        insert_component(benchmark['video'],'','video')
+    if benchmark['case'] != '':
+        insert_component(benchmark['case'],'','case')
+
+def get_component(name, type):
+    global mydb
+    cur = mydb.cursor()
+    cur.execute(f"SELECT id FROM computer_components WHERE title = \"{name}\" AND component_type = \"{type}\"")
+    res = cur.fetchall()
+    if res:
+        return res[0][0];
+    else:
+        return 0;
+
+def get_computer(benchmark):
+    global mydb
+    mainboard = get_component(benchmark['name'], "Mainboard")
+    cur = mydb.cursor()
+    cur.execute(f"SELECT id FROM computers WHERE mainboard = \"{mainboard}\"")
+    res = cur.fetchall()
+    if res:
+        return res[0][0];
+    else:
+        return 0;
+
+def get_ram_component(name, desc):
+    global mydb
+    cur = mydb.cursor()
+    if name == "":
+        name = ""
+    cur.execute(f"SELECT id FROM computer_components WHERE title = \"{name}\" AND description = \"{desc}\" AND component_type = \"RAM\"")
+    res = cur.fetchall()
+    if res:
+        return res[0][0];
+    else:
+        return 0;
+
+
+def make_computer(benchmark):
+    cpu = get_component(benchmark['cpu_name'], "CPU")
+    video = get_component(benchmark['video'], "video")
+    case = get_component(benchmark['case'], "case")
+    ram = get_ram_component(benchmark['ram_type'], benchmark['ram_size'])
+    mainboard = get_component(benchmark['name'], "Mainboard")
+    disk = get_component(benchmark['disk'], "disk")
+    return insert_computer(benchmark,cpu,video,ram,mainboard,disk,case)
+    
+
+def make_benchmarks(computer, benchmake):
+    insert_benchmark(computer,benchmark);
+
+
+
+##### MAIN #####
+
+if len(sys.argv) < 6:
+    print(f"usage: {sys.argv[0]} <benchmark file> <database host> <database user> <database password> <database name>")
+    exit(1)
+
+mydb = mysql.connector.connect( host=sys.argv[2], user=sys.argv[3], password=sys.argv[4], database=sys.argv[5])
+
+computer = 0
+
+benchmark = parse_benchmark(sys.argv[1])
+
+if False:
+    print_benchmark(benchmark)
+else:
+    make_components(benchmark)
+    computer = make_computer(benchmark)
+    if computer == 0:
+       computer = get_computer(benchmark) 
+    make_benchmarks(computer,benchmark)
+
