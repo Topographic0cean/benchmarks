@@ -1,15 +1,13 @@
-#!/bin/bash -l
+#!/usr/bin/env bash
 
-source $HOME/.python3/bin/activate
-source /etc/neverwinter.cfg
-
-/bin/rm -rf benchmark_update.json
+/bin/rm -rf benchmarks.mongo benchmarks.sql
+echo "USE neverwinter;" > benchmarks.sql
+echo "DELETE FROM computers;" >> benchmarks.sql
 for file in data/*.txt; do
-  echo " ==========  $file"
-    python update_benchmarks.mongodb.py  $file >> benchmark_update.json
+    echo " ==========  $file"
+    ./create_benchmark_database.py $file
 done
 
-mongoimport -u $DATABASE_USER -p $MONGODB_PASSWORD -d $DATABASE_USER -c computers --drop --file=benchmark_update.json
-
+#mongoimport -u $DATABASE_USER -p $MONGODB_PASSWORD -d $DATABASE_USER -c computers --drop --file=benchmark_update.json
 #scp benchmarks.sql robertwalsh.net:
 #ssh robertwalsh.net /usr/local/bin/update_benchmarks.sh $HOME/benchmarks.sql
