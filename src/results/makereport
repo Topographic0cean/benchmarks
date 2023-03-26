@@ -29,8 +29,8 @@ echo " " >> report.txt
 echo "Dhrystones             " `grep "Dhrystones per Second" ../dhrystone/dhry.single.log  | awk ' { printf "%d\n",  $4; }'` >> report.txt
 echo "Dhrystones4C " `grep "Dhrystones per Second" ../dhrystone/dhry?.log  | awk ' BEGIN { total = 0; }; { total = total + $4 }; END { printf "%d\n",  total; };'` >> report.txt
 echo " " >> report.txt
-echo "Block Writes MB/s      " `grep "Average" ../disk/*.log  | awk ' { printf "%d\n", $6};'` >> report.txt
-echo "Block Reads MB/s       " `grep "Average" ../disk/*.log  | awk ' { printf "%d\n", $3};'` >> report.txt
+echo "Block Writes MB/s      " `grep "Max" ../disk/*.log  | awk ' { printf "%d\n", $6};'` >> report.txt
+echo "Block Reads MB/s       " `grep "Max" ../disk/*.log  | awk ' { printf "%d\n", $3};'` >> report.txt
 echo " " >> report.txt
 echo "L1 Cache MB/s              " `grep "L1 Cache" ../mem/mem.log  | awk ' { printf "%d\n",  $4; }'` >> report.txt
 echo "L2 Cache MB/s             " `grep "L2 Cache" ../mem/mem.log  | awk ' { printf "%d\n",  $4; }'` >> report.txt

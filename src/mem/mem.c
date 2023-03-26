@@ -105,7 +105,7 @@ int main ( int argc, char **argv)
    uint64_t overhead;
 
    overhead = getoverhead(reps);
-   printf("overhead is %llu usecs\n", overhead);
+   printf("overhead is %lu usecs\n", overhead);
    index = 0;
    for (i = 512; i <= MAXMEM; i*=2)
    {

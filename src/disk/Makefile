@@ -6,7 +6,7 @@ clean:
 compile: clean disk
 
 disk: disk.c
-	gcc -O3 -o disk disk.c
+	gcc -O3 -D_GNU_SOURCE -o disk disk.c
 
 run:  disk
 	mkdir testdir

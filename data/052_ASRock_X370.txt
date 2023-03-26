@@ -23,18 +23,15 @@ gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.6)
  
 ================================= 
  
-Whetstone               18,181
+Whetstone               20,181
  
 Dhrystones          47,619,048
-Dhrystones4C     173,913,040
+Dhrystones4C     181,913,040
  
-Block Writes MB/s               554 
-Block Reads MB/s              2,041 
+Block Writes MB/s               378
+Block Reads MB/s                603
  
-L1 Cache MB/s                83,166 
-L2 Cache MB/s                73,341 
-L3 Cache MB/s                27,339 
-RAM MB/s                     14,965 
+RAM MB/s                     27,965 
  
 PCmark05                 20,399
 PCmark07                  6,242 
@@ -44,6 +41,7 @@ PCmark10                  3,783
 3Dmark05                 25,887
 3Dmark06        
 FireStrike                3,012
+Geekbench
  
 =====================
  

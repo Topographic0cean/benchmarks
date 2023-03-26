@@ -2,6 +2,8 @@
 #include <unistd.h>
 #include <time.h>
 #include <sys/time.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 #include <fcntl.h>
 #include <stdlib.h>
 #include <errno.h>
@@ -52,7 +54,7 @@ double writerun(uint32_t bs, uint32_t blocks)
 
    block = malloc(bs);
 
-   fd = creat(pathname,0666);
+   fd = open(pathname,O_CREAT|O_WRONLY|O_TRUNC|O_DIRECT,S_IRUSR|S_IWUSR);
    if (fd < 0)
    {
       perror("could not open file:");
@@ -108,7 +110,7 @@ double readrun(uint32_t bs, uint32_t blocks)
 
    block = malloc(bs);
 
-   fd = open(pathname,O_RDONLY);
+   fd = open(pathname,O_RDONLY|O_DIRECT);
    if (fd < 0)
    {
       perror("could not open file:");
@@ -174,7 +176,7 @@ double multiwriterun(uint32_t bs, uint32_t blocks)
    while (count--)
    {
       sprintf(pathname,"testfile%d", count);
-      fd = creat(pathname,0666);
+      fd = open(pathname,O_CREAT|O_WRONLY|O_TRUNC|O_DIRECT,S_IRUSR|S_IWUSR);
       if (fd < 0)
       {
          perror("could not open file:");
@@ -317,6 +319,8 @@ int main(int argc, char*argv[])
       results[i].readMBps = readrun(results[i].block_size,results[i].blocks);
    }
    printf("Block Size\tBlocks\tWrite MB/s\tRead MB/s\n");
+   int maxw = 0;
+   int maxr = 0;
    for (i = 0; i < size; i++)
    {
       printf("%6u\t\t%6u\t%6.0f\t\t%6.0f\n",
@@ -325,11 +329,11 @@ int main(int argc, char*argv[])
 		      results[i].writeMBps,
 		      results[i].readMBps
 		      );
-      tw += results[i].writeMBps;
-      tr += results[i].readMBps;
+      if (maxw < results[i].writeMBps)
+          maxw = results[i].writeMBps;
+      if (maxr < results[i].readMBps)
+          maxr = results[i].readMBps;
    }
-   tw /= size;
-   tr /= size;
-   printf("\t Average Read %u MB/s\tWrite %u MB/s\n",tr,tw);
+   printf("\t Max Read %u MB/s\tWrite %u MB/s\n",maxr,maxw);
    return 0;
 }
