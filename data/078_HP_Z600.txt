@@ -1,6 +1,6 @@
-hp z600 
+Name hp z600 
  
-2012/03/22
+Date 2012/03/22
  
 model name	 Intel Xeon X5650 2.67GHz 6C12T
 cpu MHz		 1596

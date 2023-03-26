@@ -1,6 +1,6 @@
-hp xw8600 
+Name hp xw8600 
  
-2011/05/13
+Date 2011/05/13
 
 model name       Intel Xeon X5450 3.00GHz4C
 cpu MHz          3000

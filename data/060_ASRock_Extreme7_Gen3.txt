@@ -1,6 +1,6 @@
-ASRock Extreme7 Gen3
+Name ASRock Extreme7 Gen3
 
-2012/03/15
+Date 2012/03/15
 Home build
 Picture asrocke7g3.jpg
 Description I was very happy with the graphics card and overall performance. 16GB RAM seemed like a lot when I built the machine. The ASRock motherboard was the best fit for the i7 and had all of the features I was looking for (which was not much). The only issue was that the sound did not work. I had to buy a separate sound card. I never tried to overclock the i7-2600K much but it seemed to work when I did. The Radeon 7870 got excellent reviews as a mid-range graphics card and holds us well even for high end gaming. The Enermax case is nice and roomy. It got a bit beat up so I did not use it for my next build.

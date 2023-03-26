@@ -1,6 +1,6 @@
-Gigabyte A320M-S2H
+Name Gigabyte A320M-S2H
 
-2020/07/19
+Date 2020/07/19
 Home build
 Picture gigabyte_a320m_s2h.png
 Description I use this computer on my workbench to validate drives, copy data from one drive to another, play around with various configuration, and things like that.   I looked for a low spec, cheap motherboard and CPU and found this combination.  I paid around $200 for everything including the power supply.   I have it as a bare board on my workbench with no case.

@@ -1,6 +1,6 @@
-Asus P5P800-MX 
+Name Asus P5P800-MX 
  
-2006/01/02
+Date 2006/01/02
 Home build
 Picture p5p800.jpg
 Description This was for my parents. It was a low end system that worked well for what it was. The Asus P5P800 Motherboard took an Intel Socket 775 chip. The Intel 865PE ICH5 chipset allowed for a front side bus with 800/533/ MHz. The Intel Celeron D 336 LGA775 ran at 2.8 GHz with a front side bus runnng at 533 Hz. It has 256 KB of L2 cache. It only had 512 MB of RAM. Maxtor DiamondMax 6L250S0 250GB 7200 RPM 16MB Cache SATA150.

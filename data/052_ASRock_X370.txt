@@ -1,6 +1,5 @@
-ASRock X370 Gamer X 
-
-2018/01/30
+Name ASRock X370 Gamer X 
+Date 2018/01/30
 Home build
 Picture asrockfatal1tyx370.jpg
 
@@ -26,22 +25,21 @@ gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.6)
 Whetstone               20,181
  
 Dhrystones          47,619,048
-Dhrystones4C     181,913,040
+Dhrystones4C       181,913,040
  
-Block Writes MB/s               378
-Block Reads MB/s                603
+Block Writes MB/s          378
+Block Reads MB/s           603
  
-RAM MB/s                     27,965 
+RAM MB/s                27,965 
+
+PCmark07                 6,242
+PCmark10                 4,867
  
-PCmark05                 20,399
-PCmark07                  6,242 
-PCmark10                  3,783
- 
-3Dmark03                101,608
-3Dmark05                 25,887
-3Dmark06        
-FireStrike                3,012
-Geekbench
+3Dmark06                29,734
+
+GeekBench cpu single     1,109
+GeekBench cpu multi      5,907
+GeekBench gpu           26,527
  
 =====================
  

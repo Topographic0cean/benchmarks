@@ -1,6 +1,6 @@
-Abit AN8  SLi
+Name Abit AN8  SLi
  
-2006/02/22
+Date 2006/02/22
 Home build
 Picture abit8n8sli.jpg
  

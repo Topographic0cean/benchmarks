@@ -1,6 +1,6 @@
-Shuttle XPC ST62K
+Name Shuttle XPC ST62K
  
-2006/02/21
+Date 2006/02/21
 Home build
 Picture shuttleft62.jpg
 Description I built this small compact computer for my wife. It overheated constantly and did not last very long. The Intel Pentium 4 CPU ran at 3.00GHz and had 512KB of L2 Cache and a front side bus running at 800 MHz. It has only 512MB of RAM. The ATI RADEON 9100 IGP video card had 32MB of video RAM and ran all of the contemporary games at a high enough level. I put a Western Digital WD2000JB-00GVA0 disk with 200GB of storage and it was plenty of room.

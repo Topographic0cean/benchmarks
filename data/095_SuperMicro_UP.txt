@@ -1,6 +1,6 @@
-SUPER MICRO 370DE6 UP
+Name SUPER MICRO 370DE6 UP
 
-2001/12/1
+Date 2001/12/1
 
 model name	 Pentium III (Coppermine)
 cpu MHz		 1000

@@ -1,6 +1,6 @@
-HP Compaq d530 CMT 
+Name HP Compaq d530 CMT 
  
-2006/05/17
+Date 2006/05/17
  
 model name	 Intel Pentium 4 3.06GHz
 cpu MHz		 3059

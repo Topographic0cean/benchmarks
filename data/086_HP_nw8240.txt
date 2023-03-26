@@ -1,6 +1,6 @@
-HP Compaq nw8240 
+Name HP Compaq nw8240 
 
-2006/02/21
+Date 2006/02/21
  
 model name	 Intel Pentium M 2.00GHz
 cpu MHz		 1995

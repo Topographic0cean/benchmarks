@@ -1,6 +1,6 @@
-HP Vectra VL 800
+Name HP Vectra VL 800
 
-2001/12/1
+Date 2001/12/1
 
 model name	  Intel Pentium 4 
 cpu MHz		  1400

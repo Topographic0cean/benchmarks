@@ -1,6 +1,6 @@
-Asus P4P800-E 
+Name Asus P4P800-E 
  
-2004/06/03
+Date 2004/06/03
 Home build
 Picture asusp4p.jpg	
 Description This was the first computer I built from components. The Asus motherboard had good solid reviews and worked very well.  The Intel Pentium 4 CPU ran at 3.00GHz and had 1MB of L2 Cache and a front side bus running at 800 MHz.  It had 1GB of RAM. The LeadTek NVIDIA GeForce 6800 GT AGP video card had 256MB of video RAM and ran all of the contemporary games at a high enough level.  I had two Western Digital Caviar WD1200JD 7200 RPM disk each with 120GB of storage and 8MB of cache in a RAID 0 configuration.  

@@ -1,6 +1,6 @@
-Gateway P90 (Neptune)
+Name   Gateway P90 (Neptune)
 
-1999/12/1
+Date 1999/12/1
 
 model name	  Pentium 
 cpu MHz		  90

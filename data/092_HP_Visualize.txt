@@ -1,6 +1,6 @@
-HP Visualize PL 
+Name HP Visualize PL 
 
-2002/12/1
+Date 2002/12/1
 
 model name	 Pentium III (Coppermine)
 cpu MHz		 1000

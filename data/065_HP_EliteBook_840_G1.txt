@@ -1,6 +1,6 @@
-HP EliteBook 840 G1 
+Name HP EliteBook 840 G1 
  
-2017/02/26
+Date 2017/02/26
  
 model name  Intel i5-4300U 1.90GHz 2C4T
 cpu MHz		 2,494

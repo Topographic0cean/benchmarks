@@ -1,6 +1,6 @@
-HP VL6 series 8
+Name HP VL6 series 8
 
-2001/12/1
+Date 2001/12/1
 
 model name	  Pentium II (Deschutes)
 cpu MHz		  447

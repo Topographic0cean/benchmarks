@@ -1,6 +1,6 @@
-1stMainboard VC19
+Name 1stMainboard VC19
 
-2002/08/02
+Date 2002/08/02
  
 model name	 Intel Pentium 4 1.70GHz
 cpu MHz		 1694

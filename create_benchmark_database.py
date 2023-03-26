@@ -3,8 +3,6 @@
 import sys
 import re
 
-prev_line = ""
-
 keys = [
         'name',
         'date',
@@ -13,76 +11,45 @@ keys = [
         'description',
         'cpu_name',
         'cpu_speed',
-        'l1_size',
-        'l2_size',
-        'l3_size',
         'ram_size',
         'ram_type',
         'chipset',
         'disk',
         'video',
         'case_name',
-        'os',
-        'gcc',
         'whetstone',
         'dhrystone',
         'dhrystonem',
         'block_write',
         'block_read',
-        'l1_speed',
-        'l2_speed',
-        'l3_speed',
         'ram_speed',
-        'pcmark05',
         'pcmark07',
         'pcmark10',
-        'dmark03',
-        'dmark05',
         'dmark06',
-        'firestrike',
-        'geekbench',
+        'geek_cpu_single',
+        'geek_cpu_multi',
+        'geek_gpu',
         ]
 
-def get_line(file):
-    global prev_line
-    if prev_line != "":
-        ret = prev_line
-        prev_line = ""
-#print("PREV LINE ",ret)
-        return ret
-    while True:
-        line = file.readline()
-        line = line.lstrip().rstrip()
-        if line != '':
-#print("LINE ",line)
-            return line
 
 def remove_string(rem, str):
     return re.sub(rem,'',str,flags=re.IGNORECASE).lstrip().rstrip()
 
 def expect_line(rem, str, default = ""):
-    global prev_line
-#print('EXPECT ',rem)
-    if rem.lower() in str.lower():
-        prev_line = ''
-        return remove_string(rem, str)
-    else:
-        prev_line = str
-        return default
+    for line in str:
+        if line.lower().startswith(rem.lower()):
+            return remove_string(rem, line)
+    return default
 
 def expect_boolean(rem, str, default = ""):
-    global prev_line
-#print('EXPECT ',rem)
-    if rem.lower() in str.lower():
-        prev_line = ''
-        return True
-    else:
-        prev_line = str
-        return False
+    for line in str:
+        if line.lower().startswith(rem.lower()):
+            return True
+    return False
 
 def make_number(rem, str):
     numstr = remove_string(",",expect_line(rem,str))
-    numarr = numstr.split(" ");
+    numarr = numstr.split(" ")
     if len(numarr) == 0:
         num = 0
     else:
@@ -98,47 +65,40 @@ def make_number(rem, str):
     return num
 
 def parse_benchmark(filename):
+    file = open(filename,mode='r')
+    benchmark_text = file.read(80*100).split('\n');
+    file.close()
+
     benchmark = {}
-    with open(filename, "r") as file:
-        benchmark['name'] = get_line(file)
-        benchmark['date'] = get_line(file)
-        if expect_boolean("Home build",get_line(file)):
-            benchmark['home_build'] = 1
-        else:
-            benchmark['home_build'] = 0
-        benchmark['picture'] = expect_line("Picture",get_line(file))
-        benchmark['description'] = expect_line("Description",get_line(file))
-        benchmark['cpu_name'] = expect_line("model name",get_line(file))
-        benchmark['cpu_speed'] = make_number("cpu MHz",get_line(file))
-        benchmark['l1_size'] = make_number("l1 cache",get_line(file))
-        benchmark['l2_size'] = make_number("l2 cache",get_line(file))
-        benchmark['l3_size'] = make_number("l3 cache",get_line(file))
-        benchmark['ram_size'] = make_number("RAM",get_line(file))
-        benchmark['ram_type'] = expect_line("RAM Type",get_line(file))
-        benchmark['chipset'] = expect_line("Chipset",get_line(file))
-        benchmark['disk'] = expect_line("Disk",get_line(file))
-        benchmark['video'] = expect_line("video",get_line(file))
-        benchmark['case_name'] = expect_line("case",get_line(file))
-        benchmark['os'] = get_line(file)
-        benchmark['gcc'] = get_line(file)
-        benchmark['linebreak'] = get_line(file)
-        benchmark['whetstone'] = make_number("Whetstone",get_line(file))
-        benchmark['dhrystone'] = make_number("dhrystones",get_line(file))
-        benchmark['dhrystonem'] = make_number("dhrystones4c",get_line(file))
-        benchmark['block_write'] = make_number("Block Writes MB/s",get_line(file))
-        benchmark['block_read'] = make_number("Block Reads MB/s",get_line(file))
-        benchmark['l1_speed'] = make_number("L1 Cache MB/s",get_line(file))
-        benchmark['l2_speed'] = make_number("L2 Cache MB/s",get_line(file))
-        benchmark['l3_speed'] = make_number("L3 Cache MB/s",get_line(file))
-        benchmark['ram_speed'] = make_number("Ram MB/s",get_line(file))
-        benchmark['pcmark05'] = make_number("pcmark05",get_line(file))
-        benchmark['pcmark07'] = make_number("pcmark07",get_line(file))
-        benchmark['pcmark10'] = make_number("pcmark10",get_line(file))
-        benchmark['dmark03'] = make_number("3dmark03",get_line(file))
-        benchmark['dmark05'] = make_number("3dmark05",get_line(file))
-        benchmark['dmark06'] = make_number("3dmark06",get_line(file))
-        benchmark['firestrike'] = make_number("firestrike",get_line(file))
-        benchmark['geekbench'] = make_number("geekbench",get_line(file))
+
+    benchmark['name'] = expect_line("Name",benchmark_text)
+    benchmark['date'] = expect_line("Date",benchmark_text)
+    if expect_boolean("Home build",benchmark_text):
+        benchmark['home_build'] = 1
+    else:
+        benchmark['home_build'] = 0
+    benchmark['picture'] = expect_line("Picture",benchmark_text)
+    benchmark['description'] = expect_line("Description",benchmark_text)
+    benchmark['cpu_name'] = expect_line("model name",benchmark_text)
+    benchmark['cpu_speed'] = make_number("cpu MHz",benchmark_text)
+    benchmark['ram_size'] = make_number("RAM",benchmark_text)
+    benchmark['ram_type'] = expect_line("RAM Type",benchmark_text)
+    benchmark['chipset'] = expect_line("Chipset",benchmark_text)
+    benchmark['disk'] = expect_line("Disk",benchmark_text)
+    benchmark['video'] = expect_line("video",benchmark_text)
+    benchmark['case_name'] = expect_line("case",benchmark_text)
+    benchmark['whetstone'] = make_number("Whetstone",benchmark_text)
+    benchmark['dhrystone'] = make_number("dhrystones",benchmark_text)
+    benchmark['dhrystonem'] = make_number("dhrystones4c",benchmark_text)
+    benchmark['block_write'] = make_number("Block Writes MB/s",benchmark_text)
+    benchmark['block_read'] = make_number("Block Reads MB/s",benchmark_text)
+    benchmark['ram_speed'] = make_number("Ram MB/s",benchmark_text)
+    benchmark['pcmark07'] = make_number("pcmark07",benchmark_text)
+    benchmark['pcmark10'] = make_number("pcmark10",benchmark_text)
+    benchmark['dmark06'] = make_number("3dmark06",benchmark_text)
+    benchmark['geek_cpu_single'] = make_number("GeekBench cpu single",benchmark_text)
+    benchmark['geek_cpu_multi'] = make_number("GeekBench cpu multi",benchmark_text)
+    benchmark['geek_gpu'] = make_number("GeekBench gpu",benchmark_text)
     return benchmark
 
 
@@ -150,9 +110,9 @@ def print_sql_benchmark(benchmark,filename):
                 comma = ""
             else:
                 comma = ","
-            print(f"{key}{comma}",end="",file=f);
-        print(") ",file=f);
-        print("VALUES (",end="",file=f);
+            print(f"{key}{comma}",end="",file=f)
+        print(") ",file=f)
+        print("VALUES (",end="",file=f)
         for key in keys:
             if key == keys[-1]:
                 comma = ""
@@ -160,10 +120,10 @@ def print_sql_benchmark(benchmark,filename):
                 comma = ","
             val = benchmark[key]
             if type(val) == int:
-                print(f"{val}{comma}",end="",file=f);
+                print(f"{val}{comma}",end="",file=f)
             else:
-                print(f"\"{val}\"{comma}",end="",file=f);
-        print(");",file=f);
+                print(f"\"{val}\"{comma}",end="",file=f)
+        print(");",file=f)
 
 
 def print_mongo_item(output, benchmark, key, last):

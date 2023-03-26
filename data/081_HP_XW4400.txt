@@ -1,6 +1,6 @@
-HP xw4400 
+Name HP xw4400 
  
-2012/05/16
+Date 2012/05/16
  
 model name	 Intel Core2 6700 2.66GHz 2C
 cpu MHz		 1596

@@ -1,6 +1,6 @@
-1stMainboard VC15
+Name 1stMainboard VC15
  
-2001/12/1
+Date 2001/12/1
 
 model name	 Intel Pentium 4 1.70GHz
 cpu MHz		 1697

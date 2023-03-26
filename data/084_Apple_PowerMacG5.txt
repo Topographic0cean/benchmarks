@@ -1,6 +1,6 @@
-Apple PowerMac G5 
+Name Apple PowerMac G5 
  
-2006/02/21
+Date 2006/02/21
  
 model name	 Power Mac G5 Dual
 cpu MHz		 1800

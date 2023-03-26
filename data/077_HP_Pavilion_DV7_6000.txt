@@ -1,6 +1,6 @@
-Pavilion dv7
+Name Pavilion dv7
  
-2011/05/13
+Date 2011/05/13
 
 model name  Intel i7-2630QM 2.00GHz4C8T
 cpu MHz	 	2000

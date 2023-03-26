@@ -1,6 +1,6 @@
-MSI B450 Tomahawk Max
+Name MSI B450 Tomahawk Max
 
-2020/05/11
+Date 2020/05/11
 Home build
 Picture msi_b450_tomahawk.jpg
 
