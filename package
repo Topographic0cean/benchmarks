@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 /bin/rm -rf benchmarks.mongo benchmarks.sql
-echo "USE neverwinter;" > benchmarks.sql
-echo "DELETE FROM computers;" >> benchmarks.sql
+
+./setup_mysql > benchmarks.sql
 for file in data/*.txt; do
     echo " ==========  $file"
     ./create_benchmark_database.py $file
