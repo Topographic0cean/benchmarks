@@ -20,6 +20,14 @@ typedef struct _results
    double multireadMBps;
 } results_t;
 
+int cflags = O_CREAT|O_WRONLY|O_TRUNC;
+int rflags = O_RDONLY;
+#ifdef O_DIRECT
+   cflags |= O_DIRECT;
+   rflags |= O_DIRECT;
+#endif
+
+
 results_t results[] =
 {
    {    2*1024, 0, 0.0, 0.0, 0.0, 0.0 },
@@ -54,7 +62,10 @@ double writerun(uint32_t bs, uint32_t blocks)
 
    block = malloc(bs);
 
-   fd = open(pathname,O_CREAT|O_WRONLY|O_TRUNC|O_DIRECT,S_IRUSR|S_IWUSR);
+   fd = open(pathname,cflags,S_IRUSR|S_IWUSR);
+#ifdef F_NOCACHE
+   fcntl(fd,F_NOCACHE,1);
+#endif
    if (fd < 0)
    {
       perror("could not open file:");
@@ -110,7 +121,10 @@ double readrun(uint32_t bs, uint32_t blocks)
 
    block = malloc(bs);
 
-   fd = open(pathname,O_RDONLY|O_DIRECT);
+   fd = open(pathname,rflags);
+#ifdef F_NOCACHE
+   fcntl(fd,F_NOCACHE,1);
+#endif
    if (fd < 0)
    {
       perror("could not open file:");
@@ -176,7 +190,10 @@ double multiwriterun(uint32_t bs, uint32_t blocks)
    while (count--)
    {
       sprintf(pathname,"testfile%d", count);
-      fd = open(pathname,O_CREAT|O_WRONLY|O_TRUNC|O_DIRECT,S_IRUSR|S_IWUSR);
+      fd = open(pathname,cflags,S_IRUSR|S_IWUSR);
+#ifdef F_NOCACHE
+   fcntl(fd,F_NOCACHE,1);
+#endif
       if (fd < 0)
       {
          perror("could not open file:");
@@ -232,7 +249,10 @@ double multireadrun(uint32_t bs, uint32_t blocks)
    while (count--)
    {
       sprintf(pathname,"testfile%d", count);
-      fd = open(pathname,O_RDONLY);
+      fd = open(pathname,rflags);
+#ifdef F_NOCACHE
+   fcntl(fd,F_NOCACHE,1);
+#endif
       if (fd < 0)
       {
          perror("could not open file:");
