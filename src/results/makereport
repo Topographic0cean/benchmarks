@@ -1,17 +1,20 @@
-echo " " > report.txt
+echo "Name " > report.txt
 echo " " >> report.txt
-date +%Y%m%d >> report.txt
-echo " " >> report.txt
-echo " " >> report.txt
-echo " " >> report.txt
-echo "Description " >> report.txt
+echo -n "Date " >> report
+date +%Y/%m/%d >> report.txt
 echo " " >> report.txt
 echo " " >> report.txt
-cat /proc/cpuinfo | grep "model name" | sed 's/://' >> report.txt
-cat /proc/cpuinfo | grep "cpu MHz" | sed 's/://' >> report.txt
-echo "L1 Cache        " `grep "L1 Cache" ../mem/mem.log  | awk ' { printf "%d KB\n",  $3; }'` >> report.txt
-echo "L2 Cache        " `grep "L2 Cache" ../mem/mem.log  | awk ' { printf "%d KB\n",  $3; }'` >> report.txt
-echo "L3 Cache        " `grep "L3 Cache" ../mem/mem.log  | awk ' { printf "%d KB\n",  $3; }'` >> report.txt
+echo " " >> report.txt
+echo " " >> report.txt
+echo " " >> report.txt
+echo " " >> report.txt
+if [[ -f /proc/cpuinfo ]]; then
+    cat /proc/cpuinfo | grep "model name" | sed 's/://' >> report.txt
+    cat /proc/cpuinfo | grep "cpu MHz" | sed 's/://' >> report.txt
+else
+echo "Model Name      " >> report.txt
+echo "CPU MHz         " >> report.txt
+fi
 echo "RAM             " >> report.txt
 echo "RAM Type        " >> report.txt
 echo "Chipset         " >> report.txt
@@ -32,19 +35,16 @@ echo " " >> report.txt
 echo "Block Writes MB/s      " `grep "Max" ../disk/*.log  | awk ' { printf "%d\n", $6};'` >> report.txt
 echo "Block Reads MB/s       " `grep "Max" ../disk/*.log  | awk ' { printf "%d\n", $3};'` >> report.txt
 echo " " >> report.txt
-echo "L1 Cache MB/s              " `grep "L1 Cache" ../mem/mem.log  | awk ' { printf "%d\n",  $4; }'` >> report.txt
-echo "L2 Cache MB/s             " `grep "L2 Cache" ../mem/mem.log  | awk ' { printf "%d\n",  $4; }'` >> report.txt
 echo "RAM MB/s                  " `grep "RAM" ../mem/mem.log  | awk ' { printf "%d\n",  $3; }'` >> report.txt
 echo " " >> report.txt
-echo "PCmark05                0" >> report.txt
 echo "PCmark07                0" >> report.txt
 echo "PCmark10                0" >> report.txt
 echo " " >> report.txt
-echo "3Dmark03                0" >> report.txt
-echo "3Dmark05                0" >> report.txt
 echo "3Dmark06                0" >> report.txt
-echo "Firestrike              0" >> report.txt
 echo " " >> report.txt
+echo "GeekBench cpu single    0" >> report.txt
+echo "GeekBench cpu multi     0" >> report.txt
+echo "GeekBench gpu           0" >> report.txt
 echo "=====================" >> report.txt
 
 echo " " >> report.txt

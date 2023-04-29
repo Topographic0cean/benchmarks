@@ -1,5 +1,4 @@
 Name MSI B450 Tomahawk Max
-
 Date 2020/05/11
 Home build
 Picture msi_b450_tomahawk.jpg
@@ -9,9 +8,6 @@ Description My son built this one after extensive research.
  
 model name  AMD Ryzen 5 3600X 3.8 GHz 6C12T
 cpu MHz	 	 3,800
-L1 Cache        96 KB 
-L2 Cache       512 KB 
-L3 Cache    16,384 KB 
 RAM             32 GB  
 RAM Type    Corsair Vengeance LPX 3600 MHz C18
 Chipset     AMD B450
@@ -32,12 +28,8 @@ Dhrystones4C            222,222,224
 Block Writes MB/s             1,354 
 Block Reads MB/s              2,041 
  
-L1 Cache MB/s                83,166 
-L2 Cache MB/s                73,341 
-L3 Cache MB/s                27,339 
 RAM MB/s                     14,965 
  
-PCmark05                          0
 PCmark07                      8,869 
 PCmark10                      6,285            
  
