@@ -11,4 +11,4 @@ disk: disk.c
 run:  disk
 	mkdir testdir
 	./disk testdir 1G > disk.log 
-	/bin/rm -rf testdir
+#/bin/rm -rf testdir

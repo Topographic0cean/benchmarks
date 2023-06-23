@@ -6,7 +6,7 @@ clean:
 compile: clean mem 
 
 mem: mem.c
-	$(CC) -O3 -o mem mem.c
+	$(CC) -g -o mem mem.c
 
 run:  mem
 	./mem > mem.log

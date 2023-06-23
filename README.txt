@@ -12,14 +12,12 @@ make
 Windows only
 run 7 found in the Applications directory
 run 10 found in Steam -- demo version
-drop 5
 
 
 3) 3D Mark
 
 Windows Only
 Run 06 in the Application directory
-Drop 03 and 05
 
 
 4) Geekbench

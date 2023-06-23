@@ -1,6 +1,6 @@
-Name ASRock X370 Gamer X 
+Name ASRock X370 Gamer X  AMD Radeon HD 7870
 Date 2018/01/30
-Home build
+
 Picture asrockfatal1tyx370.jpg
 
 Description The intent is to get a CPU with the most cores and add as much RAM as feasible since I often want to run lots of virtual machines these days.   AMD is pushing cores over performance so that is the best choice and 32GB of RAM is the most I could rationalize for the price.    I went with a Radeon 7870 as a good price vs. performance value.  Overall, this build remain solid and reliable.
