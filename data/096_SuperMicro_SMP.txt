@@ -1,0 +1,513 @@
+Name SUPER MICRO 370DE6 SMP
+
+Date 2001/12/1
+
+model name	  Pentium III (Coppermine)
+cpu MHz		  1000
+L1 Cache      256 KB
+L2 Cache 
+L3 Cache 
+RAM               256 MB PC-133 registered SDRAM
+Chipset	          ServerWorks ServerSet III HE Super Light
+Disk          AIC-7899 Ultra 160 SCSI SEAGATE ST318404LW 10K RPM 33
+Video
+                 
+Linux zurg 2.4.7-b-1.8 #4 SMP Wed Feb 27 11:10:47 IST 2002 i686 unknown
+gcc version 2.96 20000731 (Red Hat Linux 7.1 2.96-98)
+
+================================= 
+ 
+Whetstone 	        598
+
+Dhrystones    
+Dhrystones4C 
+
+Block Writes MB/s 	        18 
+Block Reads MB/s 	        27 
+
+L1 Cache 
+L2 Cache 
+L3 Cache 
+RAM MB/s    
+
+PCmark05                 
+PCmark07
+PCmark10                  
+
+3Dmark03
+3Dmark05  
+3Dmark06 
+FireStrike 
+
+=====================
+
+
+##########################################
+Single Precision C/C++ Whetstone Benchmark
+
+No run time input data
+
+Calibrate
+       0.03 Seconds          1   Passes (x 100)
+       0.09 Seconds          5   Passes (x 100)
+       0.42 Seconds         25   Passes (x 100)
+       2.09 Seconds        125   Passes (x 100)
+
+Use 5989  passes (x 100)
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12441420555114746       323.912              0.355
+N2 floating point     -1.12241148948669434       255.531              3.150
+N3 if then else        1.00000000000000000                 387.413    1.600
+N4 fixed point        12.00000000000000000                 550.010    3.430
+N5 sin,cos etc.        0.49904659390449524                  20.133   24.750
+N6 floating point      0.99999988079071045       111.013             29.100
+N7 assignments         3.00000000000000000                 124.636    8.880
+N8 exp,sqrt etc.       0.75110864639282227                   7.730   28.820
+
+MWIPS                                            598.391            100.085
+
+
+A new results file will have been created in the same directory as the
+.EXE files if one did not already exist. If you made a mistake on input, 
+you can use a text editor to correct it, delete the results or copy 
+them to a different file name. If you intend to run multiple tests you
+you may wish to rename WHETS.RES with a more informative title.
+
+Please submit feedback and results files to aburto@nosc.mil or to
+Roy_Longbottom@compuserve.com
+
+
+##########################################
+Single Precision C/C++ Whetstone Benchmark
+
+No run time input data
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.08 Seconds          5   Passes (x 100)
+       0.42 Seconds         25   Passes (x 100)
+       2.10 Seconds        125   Passes (x 100)
+
+Use 5960  passes (x 100)
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12441420555114746       324.170              0.353
+N2 floating point     -1.12241148948669434       255.103              3.140
+N3 if then else        1.00000000000000000                 387.962    1.590
+N4 fixed point        12.00000000000000000                 550.557    3.410
+N5 sin,cos etc.        0.49904659390449524                  20.133   24.630
+N6 floating point      0.99999988079071045       110.971             28.970
+N7 assignments         3.00000000000000000                 124.876    8.820
+N8 exp,sqrt etc.       0.75110864639282227                   7.731   28.680
+
+MWIPS                                            598.436             99.593
+
+
+A new results file will have been created in the same directory as the
+.EXE files if one did not already exist. If you made a mistake on input, 
+you can use a text editor to correct it, delete the results or copy 
+them to a different file name. If you intend to run multiple tests you
+you may wish to rename WHETS.RES with a more informative title.
+
+Please submit feedback and results files to aburto@nosc.mil or to
+Roy_Longbottom@compuserve.com
+
+\n=====================\n
+Using uid:501, gid:501.
+Writing with putc()...done
+Writing intelligently...done
+Rewriting...done
+Reading with getc()...done
+Reading intelligently...done
+start 'em...done...done...done...
+Create files in sequential order...done.
+Stat files in sequential order...done.
+Delete files in sequential order...done.
+Create files in random order...done.
+Stat files in random order...done.
+Delete files in random order...done.
+Version 1.02b       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+zurg             2G 12537  95 20950  19 11422   8 12312  94 29059  11 135.0   0
+                    ------Sequential Create------ --------Random Create--------
+                    -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16   541  99 +++++ +++ 15136  99   546  99 +++++ +++  3493  97
+zurg,2G,12537,95,20950,19,11422,8,12312,94,29059,11,135.0,0,16,541,99,+++++,+++,15136,99,546,99,+++++,+++,3493,97
+Using uid:501, gid:501.
+Writing with putc()...done
+Writing intelligently...done
+Rewriting...done
+Reading with getc()...done
+Reading intelligently...done
+start 'em...done...done...done...
+Create files in sequential order...done.
+Stat files in sequential order...done.
+Delete files in sequential order...done.
+Create files in random order...done.
+Stat files in random order...done.
+Delete files in random order...done.
+Version 1.02b       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+zurg             2G 12821  97 18012  20  9941   7 12478  95 24533   9 164.8   0
+                    ------Sequential Create------ --------Random Create--------
+                    -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16   522  98 +++++ +++ 14940 100   545  99 +++++ +++  3546  96
+zurg,2G,12821,97,18012,20,9941,7,12478,95,24533,9,164.8,0,16,522,98,+++++,+++,14940,100,545,99,+++++,+++,3546,96
+Using uid:501, gid:501.
+Writing with putc()...done
+Writing intelligently...done
+Rewriting...done
+Reading with getc()...done
+Reading intelligently...done
+start 'em...done...done...done...
+Create files in sequential order...done.
+Stat files in sequential order...done.
+Delete files in sequential order...done.
+Create files in random order...done.
+Stat files in random order...done.
+Delete files in random order...done.
+Version 1.02b       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+zurg             2G 12863  97 17780  19 10078   7 12445  94 24541   9 163.8   1
+                    ------Sequential Create------ --------Random Create--------
+                    -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16   521  98 +++++ +++ 15150  99   514  99 +++++ +++  3222  97
+zurg,2G,12863,97,17780,19,10078,7,12445,94,24541,9,163.8,1,16,521,98,+++++,+++,15150,99,514,99,+++++,+++,3222,97
+Using uid:501, gid:501.
+Writing with putc()...done
+Writing intelligently...done
+Rewriting...done
+Reading with getc()...done
+Reading intelligently...done
+start 'em...done...done...done...
+Create files in sequential order...done.
+Stat files in sequential order...done.
+Delete files in sequential order...done.
+Create files in random order...done.
+Stat files in random order...done.
+Delete files in random order...done.
+Version 1.02b       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+zurg             2G 12744  96 21004  22 11344   8 12531  94 28727  11 133.6   0
+                    ------Sequential Create------ --------Random Create--------
+                    -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16   523  99 +++++ +++ 15060 100   523  99 +++++ +++  3445  97
+zurg,2G,12744,96,21004,22,11344,8,12531,94,28727,11,133.6,0,16,523,99,+++++,+++,15060,100,523,99,+++++,+++,3445,97
+\n=====================\n
+
+BYTEmark* Native Mode Benchmark ver. 2 (10/95)
+Index-split by Andrew D. Balsa (11/97)
+Linux/Unix* port by Uwe F. Mayer (12/96,11/97)
+
+TEST                : Iterations/sec.  : Old Index   : New Index
+                    :                  : Pentium 90* : AMD K6/233*
+--------------------:------------------:-------------:------------
+NUMERIC SORT        :          492.96  :      12.64  :       4.15
+STRING SORT         :          41.883  :      18.71  :       2.90
+BITFIELD            :      1.4595e+08  :      25.04  :       5.23
+FP EMULATION        :          26.494  :      12.71  :       2.93
+FOURIER             :          9437.6  :      10.73  :       6.03
+ASSIGNMENT          :          6.9916  :      26.60  :       6.90
+IDEA                :          1123.8  :      17.19  :       5.10
+HUFFMAN             :          444.02  :      12.31  :       3.93
+NEURAL NET          :          9.6647  :      15.53  :       6.53
+LU DECOMPOSITION    :           471.6  :      24.43  :      17.64
+==========================ORIGINAL BYTEMARK RESULTS==========================
+INTEGER INDEX       : 17.080
+FLOATING-POINT INDEX: 15.967
+Baseline (MSDOS*)   : Pentium* 90, 256 KB L2-cache, Watcom* compiler 10.0
+==============================LINUX DATA BELOW===============================
+C compiler          : gcc version 2.96 20000731 (Red Hat Linux 7.1 2.96-98)
+libc                : unknown version
+MEMORY INDEX        : 4.711
+INTEGER INDEX       : 3.954
+FLOATING-POINT INDEX: 8.856
+Baseline (LINUX)    : AMD K6/233*, 512 KB L2-cache, gcc 2.7.2.3, libc-5.4.38
+* Trademarks are property of their respective holder.
+
+BYTEmark* Native Mode Benchmark ver. 2 (10/95)
+Index-split by Andrew D. Balsa (11/97)
+Linux/Unix* port by Uwe F. Mayer (12/96,11/97)
+
+TEST                : Iterations/sec.  : Old Index   : New Index
+                    :                  : Pentium 90* : AMD K6/233*
+--------------------:------------------:-------------:------------
+NUMERIC SORT        :          493.08  :      12.65  :       4.15
+STRING SORT         :          41.899  :      18.72  :       2.90
+BITFIELD            :      1.4595e+08  :      25.04  :       5.23
+FP EMULATION        :          26.515  :      12.72  :       2.94
+FOURIER             :          9437.6  :      10.73  :       6.03
+ASSIGNMENT          :          6.9916  :      26.60  :       6.90
+IDEA                :          1124.3  :      17.20  :       5.11
+HUFFMAN             :          444.02  :      12.31  :       3.93
+NEURAL NET          :          9.6647  :      15.53  :       6.53
+LU DECOMPOSITION    :          500.48  :      25.93  :      18.72
+==========================ORIGINAL BYTEMARK RESULTS==========================
+INTEGER INDEX       : 17.084
+FLOATING-POINT INDEX: 16.287
+Baseline (MSDOS*)   : Pentium* 90, 256 KB L2-cache, Watcom* compiler 10.0
+==============================LINUX DATA BELOW===============================
+C compiler          : gcc version 2.96 20000731 (Red Hat Linux 7.1 2.96-98)
+libc                : unknown version
+MEMORY INDEX        : 4.711
+INTEGER INDEX       : 3.955
+FLOATING-POINT INDEX: 9.033
+Baseline (LINUX)    : AMD K6/233*, 512 KB L2-cache, gcc 2.7.2.3, libc-5.4.38
+* Trademarks are property of their respective holder.
+\n=====================\n
+make all
+make[1]: Entering directory `/home/atlas/benchmarks/unixbench-4.0.1'
+Checking distribution of files
+./pgms  exists
+./src  exists
+./testdir  exists
+./old-doc  exists
+./tmp  exists
+./results  exists
+make[1]: Leaving directory `/home/atlas/benchmarks/unixbench-4.0.1'
+
+   #    #  #    #  #  #    #          #####   ######  #    #   ####   #    #
+   #    #  ##   #  #   #  #           #    #  #       ##   #  #    #  #    #
+   #    #  # #  #  #    ##            #####   #####   # #  #  #       ######
+   #    #  #  # #  #    ##            #    #  #       #  # #  #       #    #
+   #    #  #   ##  #   #  #           #    #  #       #   ##  #    #  #    #
+    ####   #    #  #  #    #          #####   ######  #    #   ####   #    #
+
+                 4       000          Based on the Byte Magazine Unix Benchmark
+                44      00  0
+   v   v       4 4      0 0 0
+    v v       44444     0  00         v4.0 revisions mostly by David C. Niemi,
+     v           4   o   000          Reston, VA, USA  David.Niemi@mail.li.org
+
+
+
+Dhrystone 2 using register variables  1 2 3 4 5 6 7 8 9 10
+
+Arithmetic Test (type = double)  1 2 3 4 5 6 7 8 9 10
+
+System Call Overhead  1 2 3 4 5 6 7 8 9 10
+
+Pipe Throughput  1 2 3 4 5 6 7 8 9 10
+
+Pipe-based Context Switching  1 2 3 4 5 6 7 8 9 10
+
+Process Creation  1 2 3
+
+Execl Throughput  1 2 3
+
+Filesystem Throughput 1024 bufsize 2000 maxblocks  1 2 3
+
+Filesystem Throughput 256 bufsize 500 maxblocks  1 2 3
+
+Filesystem Throughput 4096 bufsize 8000 maxblocks  1 2 3
+
+Shell Scripts (1 concurrent)  1 2 3
+Shell Scripts (8 concurrent)  1 2 3
+Shell Scripts (16 concurrent)  1 2 3
+
+Arithmetic Test (type = short)  1 2 3
+
+Arithmetic Test (type = int)  1 2 3
+
+Arithmetic Test (type = long)  1 2 3
+
+Arithmetic Test (type = float)  1 2 3
+
+Arithoh  1 2 3
+
+C Compiler Throughput  1 2 3
+
+Dc: sqrt(2) to 99 decimal places  1 2 3
+
+Recursion Test--Tower of Hanoi  1 2 3
+
+==============================================================
+
+  BYTE UNIX Benchmarks (Version 4.0.1)
+  System -- Linux zurg 2.4.7-b-1.8 #4 SMP Wed Feb 27 11:10:47 IST 2002 i686 unknown
+  Start Benchmark Run: Wed Feb 27 14:25:07 IST 2002
+   1 interactive users.
+    2:25pm  up  2:50,  1 user,  load average: 0.13, 0.43, 0.66
+  lrwxrwxrwx    1 root     root            4 Feb 26 00:47 /bin/sh -> bash
+  /bin/sh: symbolic link to bash
+  /dev/sda3             15551552    738368  14023188   6% /
+Dhrystone 2 using register variables     2047487.3 lps   (10 secs, 10 samples)
+Arithmetic Test (type = double)          264545.7 lps   (10 secs, 10 samples)
+System Call Overhead                     446892.0 lps   (10 secs, 10 samples)
+Pipe Throughput                          480879.7 lps   (10 secs, 10 samples)
+Pipe-based Context Switching             142505.7 lps   (10 secs, 10 samples)
+Process Creation                           4629.1 lps   (30 secs, 3 samples)
+Execl Throughput                           1194.6 lps   (29 secs, 3 samples)
+File Read 1024 bufsize 2000 maxblocks    181083.0 KBps  (30 secs, 3 samples)
+File Write 1024 bufsize 2000 maxblocks   131981.0 KBps  (30 secs, 3 samples)
+File Copy 1024 bufsize 2000 maxblocks     72926.0 KBps  (30 secs, 3 samples)
+File Read 256 bufsize 500 maxblocks       61267.0 KBps  (30 secs, 3 samples)
+File Write 256 bufsize 500 maxblocks      46705.0 KBps  (30 secs, 3 samples)
+File Copy 256 bufsize 500 maxblocks       25560.0 KBps  (30 secs, 3 samples)
+File Read 4096 bufsize 8000 maxblocks    375542.0 KBps  (30 secs, 3 samples)
+File Write 4096 bufsize 8000 maxblocks   259903.0 KBps  (30 secs, 3 samples)
+File Copy 4096 bufsize 8000 maxblocks    144848.0 KBps  (30 secs, 3 samples)
+Shell Scripts (1 concurrent)                872.8 lpm   (60 secs, 3 samples)
+Shell Scripts (8 concurrent)                189.0 lpm   (60 secs, 3 samples)
+Shell Scripts (16 concurrent)                96.0 lpm   (60 secs, 3 samples)
+Arithmetic Test (type = short)           242050.7 lps   (10 secs, 3 samples)
+Arithmetic Test (type = int)             256723.2 lps   (10 secs, 3 samples)
+Arithmetic Test (type = long)            256748.6 lps   (10 secs, 3 samples)
+Arithmetic Test (type = float)           264491.2 lps   (10 secs, 3 samples)
+Arithoh                                  4603242.5 lps   (10 secs, 3 samples)
+C Compiler Throughput                       597.0 lpm   (60 secs, 3 samples)
+Dc: sqrt(2) to 99 decimal places         207895.5 lpm   (30 secs, 3 samples)
+Recursion Test--Tower of Hanoi            26907.2 lps   (20 secs, 3 samples)
+
+
+                     INDEX VALUES            
+TEST                                        BASELINE     RESULT      INDEX
+
+Arithmetic Test (type = double)              29820.0   264545.7       88.7
+Dhrystone 2 using register variables        116700.0  2047487.3      175.4
+Execl Throughput                                43.0     1194.6      277.8
+File Copy 1024 bufsize 2000 maxblocks         3960.0    72926.0      184.2
+File Copy 256 bufsize 500 maxblocks           1655.0    25560.0      154.4
+File Copy 4096 bufsize 8000 maxblocks         5800.0   144848.0      249.7
+Pipe Throughput                              12440.0   480879.7      386.6
+Process Creation                               126.0     4629.1      367.4
+Shell Scripts (8 concurrent)                     6.0      189.0      315.0
+System Call Overhead                         15000.0   446892.0      297.9
+                                                                 =========
+     FINAL SCORE                                                     229.7
+make all
+make[1]: Entering directory `/home/atlas/benchmarks/unixbench-4.0.1'
+Checking distribution of files
+./pgms  exists
+./src  exists
+./testdir  exists
+./old-doc  exists
+./tmp  exists
+./results  exists
+make[1]: Leaving directory `/home/atlas/benchmarks/unixbench-4.0.1'
+
+   #    #  #    #  #  #    #          #####   ######  #    #   ####   #    #
+   #    #  ##   #  #   #  #           #    #  #       ##   #  #    #  #    #
+   #    #  # #  #  #    ##            #####   #####   # #  #  #       ######
+   #    #  #  # #  #    ##            #    #  #       #  # #  #       #    #
+   #    #  #   ##  #   #  #           #    #  #       #   ##  #    #  #    #
+    ####   #    #  #  #    #          #####   ######  #    #   ####   #    #
+
+                 4       000          Based on the Byte Magazine Unix Benchmark
+                44      00  0
+   v   v       4 4      0 0 0
+    v v       44444     0  00         v4.0 revisions mostly by David C. Niemi,
+     v           4   o   000          Reston, VA, USA  David.Niemi@mail.li.org
+
+
+
+Dhrystone 2 using register variables  1 2 3 4 5 6 7 8 9 10
+
+Arithmetic Test (type = double)  1 2 3 4 5 6 7 8 9 10
+
+System Call Overhead  1 2 3 4 5 6 7 8 9 10
+
+Pipe Throughput  1 2 3 4 5 6 7 8 9 10
+
+Pipe-based Context Switching  1 2 3 4 5 6 7 8 9 10
+
+Process Creation  1 2 3
+
+Execl Throughput  1 2 3
+
+Filesystem Throughput 1024 bufsize 2000 maxblocks  1 2 3
+
+Filesystem Throughput 256 bufsize 500 maxblocks  1 2 3
+
+Filesystem Throughput 4096 bufsize 8000 maxblocks  1 2 3
+
+Shell Scripts (1 concurrent)  1 2 3
+Shell Scripts (8 concurrent)  1 2 3
+Shell Scripts (16 concurrent)  1 2 3
+
+Arithmetic Test (type = short)  1 2 3
+
+Arithmetic Test (type = int)  1 2 3
+
+Arithmetic Test (type = long)  1 2 3
+
+Arithmetic Test (type = float)  1 2 3
+
+Arithoh  1 2 3
+
+C Compiler Throughput  1 2 3
+
+Dc: sqrt(2) to 99 decimal places  1 2 3
+
+Recursion Test--Tower of Hanoi  1 2 3
+
+==============================================================
+
+  BYTE UNIX Benchmarks (Version 4.0.1)
+  System -- Linux zurg 2.4.7-b-1.8 #4 SMP Wed Feb 27 11:10:47 IST 2002 i686 unknown
+  Start Benchmark Run: Wed Feb 27 15:17:10 IST 2002
+   1 interactive users.
+    3:17pm  up  3:42,  1 user,  load average: 0.92, 1.58, 1.92
+  lrwxrwxrwx    1 root     root            4 Feb 26 00:47 /bin/sh -> bash
+  /bin/sh: symbolic link to bash
+  /dev/sda3             15551552    738388  14023168   6% /
+Dhrystone 2 using register variables     2047735.4 lps   (10 secs, 10 samples)
+Arithmetic Test (type = double)          264552.4 lps   (10 secs, 10 samples)
+System Call Overhead                     444444.4 lps   (10 secs, 10 samples)
+Pipe Throughput                          467061.4 lps   (10 secs, 10 samples)
+Pipe-based Context Switching             138075.7 lps   (10 secs, 10 samples)
+Process Creation                           4590.4 lps   (30 secs, 3 samples)
+Execl Throughput                           1186.3 lps   (29 secs, 3 samples)
+File Read 1024 bufsize 2000 maxblocks    183091.0 KBps  (30 secs, 3 samples)
+File Write 1024 bufsize 2000 maxblocks   133242.0 KBps  (30 secs, 3 samples)
+File Copy 1024 bufsize 2000 maxblocks     74082.0 KBps  (30 secs, 3 samples)
+File Read 256 bufsize 500 maxblocks       61225.0 KBps  (30 secs, 3 samples)
+File Write 256 bufsize 500 maxblocks      46465.0 KBps  (30 secs, 3 samples)
+File Copy 256 bufsize 500 maxblocks       25339.0 KBps  (30 secs, 3 samples)
+File Read 4096 bufsize 8000 maxblocks    376768.0 KBps  (30 secs, 3 samples)
+File Write 4096 bufsize 8000 maxblocks   259460.0 KBps  (30 secs, 3 samples)
+File Copy 4096 bufsize 8000 maxblocks    145475.0 KBps  (30 secs, 3 samples)
+Shell Scripts (1 concurrent)                871.0 lpm   (60 secs, 3 samples)
+Shell Scripts (8 concurrent)                188.7 lpm   (60 secs, 3 samples)
+Shell Scripts (16 concurrent)                96.0 lpm   (60 secs, 3 samples)
+Arithmetic Test (type = short)           242121.3 lps   (10 secs, 3 samples)
+Arithmetic Test (type = int)             256820.6 lps   (10 secs, 3 samples)
+Arithmetic Test (type = long)            256807.5 lps   (10 secs, 3 samples)
+Arithmetic Test (type = float)           264595.6 lps   (10 secs, 3 samples)
+Arithoh                                  4604973.9 lps   (10 secs, 3 samples)
+C Compiler Throughput                       598.7 lpm   (60 secs, 3 samples)
+Dc: sqrt(2) to 99 decimal places         203334.9 lpm   (30 secs, 3 samples)
+Recursion Test--Tower of Hanoi            26927.1 lps   (20 secs, 3 samples)
+
+
+                     INDEX VALUES            
+TEST                                        BASELINE     RESULT      INDEX
+
+Arithmetic Test (type = double)              29820.0   264552.4       88.7
+Dhrystone 2 using register variables        116700.0  2047735.4      175.5
+Execl Throughput                                43.0     1186.3      275.9
+File Copy 1024 bufsize 2000 maxblocks         3960.0    74082.0      187.1
+File Copy 256 bufsize 500 maxblocks           1655.0    25339.0      153.1
+File Copy 4096 bufsize 8000 maxblocks         5800.0   145475.0      250.8
+Pipe Throughput                              12440.0   467061.4      375.5
+Process Creation                               126.0     4590.4      364.3
+Shell Scripts (8 concurrent)                     6.0      188.7      314.5
+System Call Overhead                         15000.0   444444.4      296.3
+                                                                 =========
+     FINAL SCORE                                                     228.8
+\n=====================\n

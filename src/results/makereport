@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+
+echo "Name " > report.txt
+echo -n "Date " >> report.txt
+date +%Y/%m/%d >> report.txt
+echo " " >> report.txt
+echo " " >> report.txt
+echo " " >> report.txt
+echo " " >> report.txt
+if [[ -f /proc/cpuinfo ]]; then
+    cat /proc/cpuinfo | grep "model name" | sed 's/://' |sort -u>> report.txt
+    cat /proc/cpuinfo | grep "cpu MHz" | sed 's/://'|sort -u >> report.txt
+else
+echo "Model Name      " >> report.txt
+echo "CPU MHz         " >> report.txt
+fi
+echo "RAM             " >> report.txt
+echo "RAM Type        " >> report.txt
+echo "Chipset         " >> report.txt
+echo "Disk            " >> report.txt
+echo "Video           " >> report.txt
+echo "Case            " >> report.txt
+echo " " >> report.txt
+uname -a >> report.txt
+gcc -v 2>&1 | tail -n 1 >> report.txt 
+echo " " >> report.txt
+echo "================================= " >> report.txt
+echo " " >> report.txt
+echo "Whetstone              " `grep MIPS ../whetstone/*.log  | awk ' { printf "%d\n",  $6; }'` >> report.txt
+echo " " >> report.txt
+echo "Dhrystones             " `grep "Dhrystones per Second" ../dhrystone/dhry.single.log  | awk ' { printf "%d\n",  $4; }'` >> report.txt
+echo "Dhrystones4C " `grep "Dhrystones per Second" ../dhrystone/dhry?.log  | awk ' BEGIN { total = 0; }; { total = total + $4 }; END { printf "%d\n",  total; };'` >> report.txt
+echo " " >> report.txt
+echo "Block Writes MB/s      " `grep "Max" ../disk/*.log  | awk ' { printf "%d\n", $6};'` >> report.txt
+echo "Block Reads MB/s       " `grep "Max" ../disk/*.log  | awk ' { printf "%d\n", $3};'` >> report.txt
+echo " " >> report.txt
+echo "RAM MB/s                  " `cat ../mem/mem.log ` >> report.txt
+echo " " >> report.txt
+echo "PCmark07                0" >> report.txt
+echo "PCmark10                0" >> report.txt
+echo " " >> report.txt
+echo "3Dmark06                0" >> report.txt
+echo " " >> report.txt
+echo "GeekBench cpu single    0" >> report.txt
+echo "GeekBench cpu multi     0" >> report.txt
+echo "GeekBench gpu           0" >> report.txt
+echo "=====================" >> report.txt
+
+echo " " >> report.txt
+cat ../whetstone/*.log >> report.txt
+echo " " >> report.txt
+echo "=====================" >> report.txt
+echo " " >> report.txt
+echo "Single Thread" >> report.txt
+tail -n 3 ../dhrystone/dhry.single.log >> report.txt
+echo " " >> report.txt
+echo "Multi Thread (4 thread)" >> report.txt
+tail -n 3 ../dhrystone/dhry?.log >> report.txt
+echo " " >> report.txt
+echo "=====================" >> report.txt
+echo " " >> report.txt
+cat ../mem/*.log >> report.txt
+echo " " >> report.txt
+echo "=====================" >> report.txt
+echo " " >> report.txt
+cat ../disk/*.log >> report.txt
+echo " " >> report.txt
+echo "=====================" >> report.txt
+echo " " >> report.txt

@@ -1,0 +1,91 @@
+Name MacBook Pro 16-inch, Nov 2023
+Date 2024/04/26
+ 
+ 
+ 
+ 
+Model Name  Apple M3 Max 14 core
+CPU MHz     4060
+RAM         36 GB     
+RAM Type    Apple    
+Chipset     Apple    
+Disk        APPLE SSD    
+Video       Apple M3 Max    
+Case        Apple    
+ 
+Darwin MACKXCYDT229C 23.4.0 Darwin Kernel Version 23.4.0: Fri Mar 15 00:12:37 PDT 2024; root:xnu-10063.101.17~1/RELEASE_ARM64_T6031 arm64
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ 
+================================= 
+ 
+Whetstone               66666
+ 
+Dhrystones              100000000
+Dhrystones4C  333333344
+ 
+Block Writes MB/s       6882
+Block Reads MB/s        1052
+ 
+RAM MB/s                   14826
+ 
+PCmark07                0
+PCmark10                0
+ 
+3Dmark06                0
+ 
+GeekBench cpu single    3209
+GeekBench cpu multi     18961
+GeekBench gpu           77826
+=====================
+ 
+
+Loops: 1000000, Iterations: 2, Duration: 3 sec.
+C Converted Double Precision Whetstones: 66666.7 MIPS
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      100000000.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      83333336.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      83333336.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      83333336.0 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      83333336.0 
+
+ 
+=====================
+ 
+14826
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read MB/s
+  2048		524288	   603		   106
+  4096		262144	  1760		   255
+  8192		131072	  3414		   289
+ 16384		 65536	  5341		   475
+ 32768		 32768	  6883		   607
+ 65536		 16384	  2714		   395
+131072		  8192	  3518		   581
+262144		  4096	  4593		  1052
+	 Max Read 1052 MB/s	Write 6882 MB/s
+ 
+=====================
+ 

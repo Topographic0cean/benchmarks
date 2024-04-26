@@ -1,0 +1,120 @@
+Name ASRock Extreme7 Gen3
+
+Date 2012/03/15
+Home build
+Picture asrocke7g3.jpg
+Description I was very happy with the graphics card and overall performance. 16GB RAM seemed like a lot when I built the machine. The ASRock motherboard was the best fit for the i7 and had all of the features I was looking for (which was not much). The only issue was that the sound did not work. I had to buy a separate sound card. I never tried to overclock the i7-2600K much but it seemed to work when I did. The Radeon 7870 got excellent reviews as a mid-range graphics card and holds us well even for high end gaming. The Enermax case is nice and roomy. It got a bit beat up so I did not use it for my next build.
+
+model name  Intel 3.40 GHz i7-2600K 4C8T 
+cpu MHz		 2,800
+L1 Cache        32 KB
+L2 Cache       256 KB
+L3 Cache     8,192 KB
+RAM             16 GB
+RAM Type    CORSAIR Vengeance SDRAM DDR3 1600
+Chipset     Intel Z68
+Disk        Samsung SDD 840 EVO 250GB
+Video       Gigabyte AMD Radeon HD 7870 2GB GDDR5 GV-R787OC-2GD 
+Case
+
+Linux ishtadevata 3.0.0-12-generic #20-Ubuntu SMP Fri Oct 7 14:56:25 UTC 2011 x86_64 x86_64 x86_64 GNU/Linux
+gcc version 4.6.1 (Ubuntu/Linaro 4.6.1-9ubuntu3)
+
+=================================
+
+Whetstone               4,761
+
+Dhrystones               38,461,540
+Dhrystones4C   137,931,040
+
+Block Writes MB/s             365 
+Block Reads MB/s            3,216 
+
+L1 Cache MB/s               113,079 
+L2 Cache MB/s                51,260 
+L3 Cache MB/s                38,260 
+RAM MB/s                     18,438 
+
+PCmark05                10,816
+PCmark07                 3,230
+PCMark10 
+
+3Dmark03                 94,932
+3Dmark05                 27,317
+3Dmark06                 21,863
+FireStrike
+
+=====================
+ 
+
+Loops: 10000000, Iterations: 1, Duration: 160 sec.
+C Converted Double Precision Whetstones: 6250.0 MIPS
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      38461540.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      34482760.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      34482760.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      34482760.0 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      34482760.0 
+
+ 
+=====================
+ 
+overhead is 0 usecs
+   1.0	47248.585016
+   2.0	49854.455826
+   4.0	52888.720348
+   8.0	55569.226542
+  16.0	54675.505447
+  32.0	56160.394264
+  64.0	36260.274242
+ 128.0	29756.100201
+ 256.0	35599.145575
+ 512.0	34400.116904
+1024.0	32799.134052
+2048.0	23279.707871
+4096.0	19922.301322
+8192.0	18735.096144
+16384.0	17678.718962
+32768.0	17669.335822
+65536.0	17638.803977
+Memory		KBytes	   
+L1 Cache MB/s:	    32	56160.394
+L2 Cache MB/s:	    64	36260.274
+RAM:		  ---	17638.804
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read 
+2048	2306867	    82	  5517
+4096	1153433	    82	  7845
+8192	576716	    82	  8999
+16384	288358	    80	  9215
+32768	144179	    81	  9238
+65536	72089	    82	  9414
+131072	36044	    81	  7782
+262144	18022	    80	  7463
+	 Average Read 8183 MB/s	Write 80 
+ 
+=====================
+ 

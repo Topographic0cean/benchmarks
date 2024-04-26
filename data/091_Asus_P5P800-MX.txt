@@ -1,0 +1,130 @@
+Name Asus P5P800-MX 
+ 
+Date 2006/01/02
+Home build
+Picture p5p800.jpg
+Description This was for my parents. It was a low end system that worked well for what it was. The Asus P5P800 Motherboard took an Intel Socket 775 chip. The Intel 865PE ICH5 chipset allowed for a front side bus with 800/533/ MHz. The Intel Celeron D 336 LGA775 ran at 2.8 GHz with a front side bus runnng at 533 Hz. It has 256 KB of L2 cache. It only had 512 MB of RAM. Maxtor DiamondMax 6L250S0 250GB 7200 RPM 16MB Cache SATA150.
+ 
+model name	 Intel Celeron D 336
+cpu MHz		 2802
+L1 Cache           16 KB 
+L2 Cache          256 KB 
+L3 Cache 
+RAM               512 MB 
+Chipset          Intel 865GV  
+Disk             Maxtor DiamondMax 6L250S0 250GB 7200 RPM 16MB Cache SATA150
+Video            Intel Extreme on chip
+ 
+Linux localhost.localdomain 2.6.15-1.2054_FC5 #1 Tue Mar 14 15:48:33 EST 2006 i686 i686 i386 GNU/Linux
+gcc version 4.1.0 20060304 (Red Hat 4.1.0-3)
+ 
+================================= 
+ 
+Whetstone               1376
+ 
+Dhrystones              4,926,108
+Dhrystones4C   5,069,708
+ 
+Block Writes MB/s            33 
+Block Reads MB/s             31 
+ 
+L1 Cache MB/s                1,303 
+L2 Cache MB/s                1,195 
+L3 Cache 
+RAM MB/s                     1,125 
+ 
+PCmark05                1934
+PCmark07
+PCmark10                  
+
+3Dmark03                 129
+3Dmark05  
+3Dmark06 
+FireStrike 
+ 
+=====================
+ 
+
+##############################################
+Whetstone Double  Precision Benchmark in C/C++
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667393521       496.607               0.552
+N2 floating point      -1.12187079889296659       519.929               3.688
+N3 if then else         1.00000000000000000               33559.939     0.044
+N4 fixed point         12.00000000000000000               160503.535     0.028
+N5 sin,cos etc.         0.49902937281515608                  33.272    35.678
+N6 floating point       0.99999987890670028       372.492              20.661
+N7 assignments          3.00000000000000000               16478.510     0.160
+N8 exp,sqrt etc.        0.75100163018458566                  12.382    42.867
+
+MWIPS                                            1376.183             103.678
+
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.2 
+Dhrystones per Second:                      4926108.5 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.8 
+Dhrystones per Second:                      1267427.1 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.8 
+Dhrystones per Second:                      1267427.1 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.8 
+Dhrystones per Second:                      1267427.1 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.8 
+Dhrystones per Second:                      1267427.1 
+
+ 
+=====================
+ 
+overhead is 10 usecs
+   1.0	1303.780443
+   2.0	1292.577532
+   4.0	1289.844795
+   8.0	1288.547351
+  16.0	1195.731329
+  32.0	1195.711486
+  64.0	1195.547714
+ 128.0	1195.813667
+ 256.0	1173.435385
+ 512.0	1143.050296
+1024.0	1132.219537
+2048.0	1128.779309
+4096.0	1126.298358
+8192.0	1133.810022
+16384.0	1132.971762
+32768.0	1129.801386
+65536.0	1125.009999
+Memory		KBytes	   
+RAM:		  ---	1125.010
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read 
+2048	2306867	    32	    34
+4096	1153433	    32	    34
+8192	576716	    32	    34
+16384	288358	    32	    34
+32768	144179	    32	    34
+65536	72089	    32	    34
+131072	36044	    32	    34
+262144	18022	    31	    34
+	 Average Read 33 MB/s	Write 31 
+ 
+=====================
+ 

@@ -1,0 +1,125 @@
+Name macBook Air (13-inch, Early 2015) 
+ 
+Date 2015/01/19
+ 
+ 
+ 
+Description 
+ 
+ 
+model name  Intel Core I-5 5250U
+cpu MHz	 	 1,600
+L1 Cache       64
+L2 Cache       256
+L3 Cache       3072
+RAM    		4 GB         
+RAM Type        1600 MHz DDR3 
+Chipset         Apple 
+Disk            Apple 
+Video           Intel HD Graphics 6000 1536 MB 
+Case            Apple 
+ 
+Darwin air.local 19.6.0 Darwin Kernel Version 19.6.0: Thu Jun 18 20:49:00 PDT 2020; root:xnu-6153.141.1~1/RELEASE_X86_64 x86_64
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ 
+================================= 
+ 
+Whetstone               5,714
+ 
+Dhrystones              28,571,428
+Dhrystones (4 process)  65,573,772
+ 
+Block Writes MB/s       542
+Block Reads MB/s        442
+ 
+L1 Cache MB/s      76,618        
+L2 Cache MB/s      22,678       
+L3 Cache MB/s      15,684
+RAM MB/s            8,000       
+ 
+PCmark05                0
+PCmark07                0
+PCmark10                0
+ 
+3Dmark03                0
+3Dmark05                0
+3Dmark06                0
+Firestrike              0
+ 
+=====================
+ 
+
+Loops: 1000000, Iterations: 2, Duration: 35 sec.
+C Converted Double Precision Whetstones: 5714.3 MIPS
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      28571428.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      16393443.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      16393443.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      16393443.0 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      16393443.0 
+
+ 
+=====================
+ 
+overhead is 0 usecs
+   1.0	1251178.001473
+   2.0	2430030.949695
+   4.0	5066889.861097
+   8.0	9707905.751426
+  16.0	20543725.872301
+  32.0	40977880.627580
+  64.0	84402134.630736
+ 128.0	168661070.611193
+ 256.0	337908321.598409
+ 512.0	673488810.144622
+1024.0	1356330746.332804
+2048.0	2712664079.666138
+4096.0	5425330746.332804
+8192.0	10850664079.666138
+16384.0	24413997089.624405
+32768.0	32549331393.241879
+65536.0	97631997090.339661
+131072.0	97599998545.646667
+262144.0	inf
+524288.0	inf
+1048576.0	inf
+Memory		KBytes	   MB/s
+RAM:		1048576	   inf
+ 
+=====================
+ 
+writing to testdir/testfile
+Block Size	Blocks	Write MB/s	Read MB/s
+  2048		1048576	   358		   370
+  4096		524288	   512		   396
+  8192		262144	   486		   409
+ 16384		131072	   519		   430
+ 32768		 65536	   626		   468
+ 65536		 32768	   602		   524
+131072		 16384	   611		   478
+262144		  8192	   630		   466
+	 Average Read 442 MB/s	Write 542 MB/s
+ 
+=====================
+ 

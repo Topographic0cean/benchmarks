@@ -1,0 +1,130 @@
+Name MacBook Pro  
+ 
+Date 2011/05/12
+ 
+model name       Intel Core2 Duo 2.400GHz 2C
+cpu MHz          2400
+L1 Cache         32 KB
+L2 Cache         3 MB
+L3 Cache 
+RAM              4 MB 
+Chipset
+Disk             ST9250315AG
+Video            nVidia GeForce 320M 256MB 
+Case
+ 
+Darwin floozy.local 10.7.0 Darwin Kernel Version 10.7.0: Sat Jan 29 15:17:16 PST 2011; root:xnu-1504.9.37~1/RELEASE_I386 i386
+gcc version 4.2.1 (Apple Inc. build 5666) (dot 3)
+ 
+================================= 
+ 
+Whetstone               3,982
+ 
+Dhrystones              17,543,860
+Dhrystones4C   33,898,304
+ 
+Block Writes MB/s            75 
+Block Reads MB/s             75 
+ 
+L1 Cache MB/s                26,356 
+L2 Cache MB/s                 7,407 
+L3 Cache 
+RAM MB/s                      2,691 
+ 
+PCmark05                 
+PCmark07
+PCmark10                  
+
+3Dmark03
+3Dmark05  
+3Dmark06 
+FireStrike 
+
+=====================
+ 
+
+##############################################
+Whetstone Double  Precision Benchmark in C/C++
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900       800.390               0.942
+N2 floating point      -1.12187079889284425       794.180               6.647
+N3 if then else         1.00000000000000000               56596.271     0.072
+N4 fixed point         12.00000000000000000               280272.722     0.044
+N5 sin,cos etc.         0.49902937281513676                 113.281    28.849
+N6 floating point       0.99999987890802811       578.058              36.653
+N7 assignments          3.00000000000000000                8178.060     0.888
+N8 exp,sqrt etc.        0.75100163018458665                  59.568    24.530
+
+MWIPS                                            3982.728              98.626
+
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      17543860.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      8474576.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      8474576.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      8474576.0 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      8474576.0 
+
+ 
+=====================
+ 
+overhead is 1 usecs
+   1.0	12123.748170
+   2.0	18188.256929
+   4.0	23272.910846
+   8.0	26903.814180
+  16.0	27510.109903
+  32.0	26356.268086
+  64.0	7406.325053
+ 128.0	7385.759806
+ 256.0	7399.366330
+ 512.0	7407.774583
+1024.0	4589.195742
+2048.0	4410.083558
+4096.0	4404.789080
+8192.0	2794.693776
+16384.0	2696.670220
+32768.0	2694.259082
+65536.0	2691.165736
+Memory		KBytes	   
+L1 Cache MB/s:	    32	26356.268
+L2 Cache MB/s:	   512	7407.775
+RAM:		  ---	2691.166
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read 
+2048	2306867	    71	    75
+4096	1153433	    73	    75
+8192	576716	    71	    76
+16384	288358	    74	    75
+32768	144179	    73	    74
+65536	72089	    72	    74
+131072	36044	    74	    74
+262144	18022	    73	    72
+	 Average Read 74 MB/s	Write 71 
+ 
+=====================
+ 

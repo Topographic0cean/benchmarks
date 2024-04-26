@@ -1,0 +1,119 @@
+Name HP EliteBook 840 G1 
+ 
+Date 2017/02/26
+ 
+model name  Intel i5-4300U 1.90GHz 2C4T
+cpu MHz		 2,494
+L1 Cache        32 KB
+L2 Cache       256 KB
+L3 Cache     3,072 KB
+RAM              8 GB 
+RAM Type
+Chipset     Haswell-ULT 
+Disk        HGST Travelstar Z7K500 500GB 7200 RPM 32MB Cache SATA 6.0Gb/s 2.5  
+Video       Intel HD 4400
+Case
+ 
+CYGWIN_NT-10.0 DESKTOP-OH70C3C 2.7.0(0.306/5/3) 2017-02-12 13:18 x86_64 Cygwin
+gcc version 5.4.0 (GCC) 
+ 
+================================= 
+
+Whetstone               4,761
+ 
+Dhrystones              32,258,064
+Dhrystones4C   59,701,492
+ 
+Block Writes MB/s               78 
+Block Reads MB/s             1,795 
+ 
+L1 Cache MB/s               60,075 
+L2 Cache MB/s               20,032 
+L3 Cache MB/s               10,661 
+RAM MB/s                     2,770 
+ 
+PCmark05
+PCmark07                2,876 
+PCmark10                2,281
+ 
+3Dmark03                9,680
+3Dmark05                6,845
+3Dmark06                4,672
+FireStrike                236
+
+ 
+=====================
+ 
+
+Loops: 1000000, Iterations: 2, Duration: 42 sec.
+C Converted Double Precision Whetstones: 4761.9 MIPS
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      32258064.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      14925373.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      14925373.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      14925373.0 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      14925373.0 
+
+ 
+=====================
+ 
+overhead is 0 usecs
+   1.0	10563.354445
+   2.0	21459.945552
+   4.0	33817.453154
+   8.0	47677.591666
+  16.0	60075.176204
+  32.0	59335.979515
+  64.0	20379.177700
+ 128.0	20448.453643
+ 256.0	20032.013505
+ 512.0	11769.489230
+1024.0	10661.971719
+2048.0	9007.827884
+4096.0	4595.378570
+8192.0	2471.743718
+16384.0	2503.956813
+32768.0	2717.039929
+65536.0	2770.476835
+Memory		KBytes	   
+L1 Cache MB/s:	    32	59335.980
+L2 Cache MB/s:	   256	20032.014
+RAM:		  ---	2770.477
+ 
+=====================
+ 
+writing to testdir/testfile
+Block Size	Blocks	Write MB/s	Read 
+  2048		563200	    55		   678
+  4096		281600	    80		  1027
+  8192		140800	    84		  1471
+ 16384		 70400	    88		  1987
+ 32768		 35200	    89		  2431
+ 65536		 17600	    87		  2474
+131072		  8800	    80		  2091
+262144		  4400	    70		  2211
+	 Average Read 1795 MB/s	Write 78 
+ 
+=====================
+ 

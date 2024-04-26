@@ -1,0 +1,118 @@
+Name MacBook Pro (16-inch, 2021)
+Date 2023/04/28
+ 
+
+
+
+ 
+ 
+model name  Apple M1 Pro
+cpu MHz	 	1,400 
+RAM         16 GB 
+RAM Type    LPDDR5
+Chipset     Apple      
+Disk        APPLE SSD AP0512R
+Video       Apple M1 Pro
+Case        Apple    
+ 
+Darwin flighty.local 22.4.0 Darwin Kernel Version 22.4.0: Mon Mar  6 20:59:28 PST 2023; root:xnu-8796.101.5~3/RELEASE_ARM64_T6000 arm64
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ 
+================================= 
+ 
+Whetstone              50,000
+ 
+Dhrystones         62,500,000
+Dhrystones4C      228,758,168
+ 
+Block Writes MB/s       5,681
+Block Reads MB/s        1,494
+ 
+RAM MB/s                   0
+ 
+PCmark07                0
+PCmark10                0
+ 
+3Dmark06                0
+
+GeekBench cpu single    2,401
+GeekBench cpu multi    12,321
+GeekBench gpu          41,154
+ 
+=====================
+ 
+
+Loops: 1000000, Iterations: 2, Duration: 4 sec.
+C Converted Double Precision Whetstones: 50000.0 MIPS
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      62500000.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      58823528.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      58823528.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      55555556.0 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      55555556.0 
+
+ 
+=====================
+ 
+overhead is 2 usecs
+0	18446744073709551615
+2	18446744073709551615
+4	18446744073709551615
+8	18446744073709551615
+16	18446744073709551615
+32	18446744073709551615
+64	18446744073709551615
+128	18446744073709551615
+256	18446744073709551615
+512	18446744073709551615
+1024	18446744073709551615
+2048	18446744073709551615
+4096	18446744073709551615
+8192	18446744073709551615
+16384	18446744073709551615
+32768	0
+65536	0
+131072	0
+262144	0
+524288	0
+1048576	0
+Memory		KBytes	   MB/s
+RAM:		1048576	0
+ 
+=====================
+ 
+writing to testdir/testfile
+Block Size	Blocks	Write MB/s	Read MB/s
+  2048		524288	   514		    65
+  4096		262144	  1560		   153
+  8192		131072	  2611		   217
+ 16384		 65536	  4303		   459
+ 32768		 32768	  5681		   418
+ 65536		 16384	  1625		   539
+131072		  8192	  2531		   949
+262144		  4096	  3583		  1494
+	 Max Read 1494 MB/s	Write 5681 MB/s
+ 
+=====================
+ 

@@ -1,0 +1,8 @@
+
+dhry.exe 1000000000 >  dhry.single.log
+
+dhry.exe 1000000000 > dhry.multi1.log 
+dhry.exe 1000000000 > dhry.multi2.log 
+dhry.exe 1000000000 > dhry.multi3.log 
+dhry.exe 1000000000 > dhry.multi4.log 
+

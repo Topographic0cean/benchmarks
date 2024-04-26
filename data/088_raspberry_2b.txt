@@ -1,0 +1,126 @@
+Name Raspberry Pi 2 Model B Rev 1.1
+
+Date 2015/09/24
+
+ 
+ 
+Description 
+ 
+
+model name	 Broadcom BCM2837 ARMv7 rev 5 (v7l)
+cpu MHz		  1,094
+L1 Cache        512 KB
+L2 Cache          0 
+L3 Cache          0 
+RAM           1 GB   
+RAM Type      LPDDR-900 SDRAM 
+Chipset       N/A  
+Disk          SanDisk  
+Video         N/A 
+Case         none    
+ 
+Linux raspberrypi 5.4.64-v7+ #1340 SMP Fri Sep 11 14:09:35 BST 2020 armv7l GNU/Linux
+gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) 
+ 
+================================= 
+ 
+Whetstone               1,818
+ 
+Dhrystones              2,652,520
+Dhrystones4C           10,617,171
+ 
+Block Writes MB/s       16
+Block Reads MB/s        20
+ 
+L1 Cache MB/s               2,311
+L2 Cache MB/s             
+L3 Cache MB/s             
+RAM MB/s                   1,088
+ 
+PCmark05                0
+PCmark07                0
+PCmark10                0
+ 
+3Dmark03                0
+3Dmark05                0
+3Dmark06                0
+Firestrike              0
+ 
+=====================
+ 
+
+Loops: 1000000, Iterations: 2, Duration: 110 sec.
+C Converted Double Precision Whetstones: 1818.2 MIPS
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.4 
+Dhrystones per Second:                      2652520.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.4 
+Dhrystones per Second:                      2659574.5 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.4 
+Dhrystones per Second:                      2652520.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.4 
+Dhrystones per Second:                      2659574.5 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.4 
+Dhrystones per Second:                      2645502.8 
+
+ 
+=====================
+ 
+overhead is 2 usecs
+   1.0	1927.473417
+   2.0	2173.712421
+   4.0	2321.818204
+   8.0	2397.461345
+  16.0	2365.103497
+  32.0	2311.195246
+  64.0	1332.878915
+ 128.0	1468.608308
+ 256.0	1337.794199
+ 512.0	1230.958756
+1024.0	1178.051572
+2048.0	1073.757392
+4096.0	1093.427933
+8192.0	1103.227693
+16384.0	1108.635047
+32768.0	1110.219011
+65536.0	1110.030353
+131072.0	1108.721499
+262144.0	1104.399136
+524288.0	1098.277550
+1048576.0	1087.999763
+Memory		KBytes	   MB/s
+L1 Cache:	    32	2311.195
+RAM:		1048576	1088.000
+ 
+=====================
+ 
+writing to testdir/testfile
+Block Size	Blocks	Write MB/s	Read MB/s
+  2048		524288	    18		    21
+  4096		262144	    19		    21
+  8192		131072	    18		    21
+ 16384		 65536	    19		    21
+ 32768		 32768	    19		    20
+ 65536		 16384	    18		    21
+131072		  8192	    11		    21
+262144		  4096	    17		    21
+	 Average Read 20 MB/s	Write 16 MB/s
+ 
+=====================
+ 

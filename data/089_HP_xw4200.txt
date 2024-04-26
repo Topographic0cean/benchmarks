@@ -1,0 +1,129 @@
+Name HP Workstation xw4200 
+ 
+Date 2005/04/01
+ 
+model name	 Intel Pentium 4 3.20GHz
+cpu MHz		 3200
+L1 Cache         1024 KB
+L2 Cache         2048 KB
+L3 Cache	
+RAM            	 1 GB
+Chipset    
+Disk	
+Video
+ 
+Linux epgd121 2.4.21-37.ELsmp #1 SMP Wed Sep 7 13:28:55 EDT 2005 i686 i686 i386 GNU/Linux
+gcc version 3.2.3 20030502 (Red Hat Linux 3.2.3-52)
+ 
+================================= 
+ 
+Whetstone               732
+ 
+Dhrystones              4545454
+Dhrystones4C   4851426
+ 
+Block Writes MB/s            52 
+Block Reads MB/s             30 
+ 
+L1 Cache MB/s                8,134 
+L2 Cache MB/s                5,561 
+L3 Cache 
+RAM MB/s                     1,759 
+ 
+PCmark05
+PCmark07
+PCmark10                  
+ 
+3Dmark03
+3Dmark05  
+3Dmark06 
+FireStrike 
+ 
+=====================
+ 
+
+##############################################
+Whetstone Double  Precision Benchmark in C/C++
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667393521       591.296               0.241
+N2 floating point      -1.12187079889297014       376.421               2.650
+N3 if then else         1.00000000000000000                 645.527     1.190
+N4 fixed point         12.00000000000000000                1367.211     1.710
+N5 sin,cos etc.         0.49902937281515392                  33.911    18.210
+N6 floating point       0.99999987890803044        81.271              49.260
+N7 assignments          3.00000000000000000                 265.811     5.160
+N8 exp,sqrt etc.        0.75100163018458566                  12.020    22.970
+
+MWIPS                                             732.018             101.391
+
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.2 
+Dhrystones per Second:                      4545454.5 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.8 
+Dhrystones per Second:                      1212121.2 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.8 
+Dhrystones per Second:                      1213592.2 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.8 
+Dhrystones per Second:                      1213592.2 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.8 
+Dhrystones per Second:                      1212121.2 
+
+ 
+=====================
+ 
+overhead is 6273 usecs
+   1.0	4265.408173
+   2.0	6683.231828
+   4.0	8308.073640
+   8.0	9439.412335
+  16.0	8111.045042
+  32.0	8510.274135
+  64.0	9299.886269
+ 128.0	9034.478282
+ 256.0	9163.923861
+ 512.0	8666.852522
+1024.0	8134.827102
+2048.0	5561.454984
+4096.0	3021.709447
+8192.0	1851.844383
+16384.0	1777.108156
+32768.0	1769.482698
+65536.0	1759.350203
+Memory		KBytes	   
+L1 Cache MB/s:	  1024	8134.827
+L2 Cache MB/s:	  2048	5561.455
+RAM:		  ---	1759.350
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read 
+2048	2306867	    32	    53
+4096	1153433	    30	    52
+8192	576716	    32	    53
+16384	288358	    33	    52
+32768	144179	    31	    53
+65536	72089	    31	    52
+131072	36044	    32	    53
+262144	18022	    30	    52
+	 Average Read 52 MB/s	Write 30 
+ 
+=====================
+ 

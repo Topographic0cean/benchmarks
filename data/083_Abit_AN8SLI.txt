@@ -1,0 +1,133 @@
+Name Abit AN8  SLi
+ 
+Date 2006/02/22
+Home build
+Picture abit8n8sli.jpg
+ 
+Description  The Dual Core AMD Opteron 165 was supposed to be a great chip, but overclocking was extremely disappointing. The best I did was a little over 2Ghz. Any higher at any reasonable voltage failed. Can you believe this computer had only 2GB of RAM? The XFX nVidia GeForce 7800 GT 256MB was a fantastic mid-range graphics card and ran all the current games with no issues.
+
+
+model name       AMD Opteron 165 2C
+cpu MHz          1808
+L1 Cache         64 KB
+L2 Cache         1024 KB
+L3 Cache 
+RAM          	 2 GB     
+Chipset     	 NVIDIA NF4 SLI single chip
+Disk	         2 Western Digital Caviar WD1200JD 120GB 7200RPM 8MB RAID 0 
+Video	      	 Xfx nVidia GeForce 8800 GT 512 PCIe
+ 
+CYGWIN_NT-5.1 ishtadevata 1.5.19(0.150/4/2) 2006-01-20 13:28 i686 Cygwin
+gcc version 3.4.4 (cygming special) (gdc 0.12, using dmd 0.125)
+ 
+================================= 
+ 
+Whetstone               1755
+ 
+Dhrystones               5,988,024
+Dhrystones4C   12,253,476
+ 
+Block Writes MB/s            50 
+Block Reads MB/s             75 
+ 
+L1 Cache MB/s                6,800 
+L2 Cache MB/s                1,775 
+L3 Cache 
+RAM MB/s                     1,088 
+ 
+PCmark05		 4,706
+PCmark07
+PCmark10                  
+
+3Dmark03		
+3Dmark05	
+3Dmark06                 7,118
+FireStrike 
+ 
+=====================
+ 
+
+##############################################
+Whetstone Double  Precision Benchmark in C/C++
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667393521       533.326               0.575
+N2 floating point      -1.12187079889296837       473.767               4.531
+N3 if then else         1.00000000000000000                2941.463     0.562
+N4 fixed point         12.00000000000000000                1570.281     3.204
+N5 sin,cos etc.         0.49902937281509135                  42.041    31.609
+N6 floating point       0.99999987890670028       343.321              25.094
+N7 assignments          3.00000000000000000                 485.625     6.078
+N8 exp,sqrt etc.        0.75100163018458366                  30.741    19.328
+
+MWIPS                                            1755.531              90.981
+
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.2 
+Dhrystones per Second:                      5988024.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.3 
+Dhrystones per Second:                      3105590.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.3 
+Dhrystones per Second:                      3021148.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.3 
+Dhrystones per Second:                      3105590.0 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.3 
+Dhrystones per Second:                      3021148.0 
+
+ 
+=====================
+ 
+   1.0	5673.196457
+   2.0	6245.895171
+   4.0	6507.237752
+   8.0	6650.709002
+  16.0	6790.287140
+  32.0	6790.701637
+  64.0	6800.366975
+ 128.0	1765.270425
+ 256.0	1785.922731
+ 512.0	1725.956654
+1024.0	1775.451159
+2048.0	1108.033442
+4096.0	1084.888372
+8192.0	1080.841381
+16384.0	1088.071219
+32768.0	1088.313940
+65536.0	1088.386631
+Memory		KBytes	   
+L1 Cache MB/s:	    64	6800.367
+L2 Cache MB/s:	  1024	1775.451
+RAM:		  ---	1088.387
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read 
+2048	2306867	    50	    40
+4096	1153433	    46	    45
+8192	576716	    58	    35
+16384	288358	    72	    45
+32768	144179	    70	    40
+65536	72089	    74	    38
+131072	36044	    62	    26
+262144	18022	    81	    31
+	 Average Read 37 MB/s	Write 63 
+ 
+=====================
+ 

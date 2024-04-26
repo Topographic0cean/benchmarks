@@ -1,0 +1,116 @@
+Name HP xw4400 
+ 
+Date 2012/05/16
+ 
+model name	 Intel Core2 6700 2.66GHz 2C
+cpu MHz		 1596
+L1 Cache           32 KB
+L2 Cache         4096 KB
+L3 Cache 
+RAM     
+Chipset		 Intel 975X           
+Disk     	 Western Digital Caviar SE16 WD7500AAKS 750GB 7200 RPM 16MB Cache SATA 3.0Gb/s 
+Video            nVidia G92 [GeForce 8800 GT] (rev a2) 
+    Case
+ 
+Linux ishtadevata 2.6.35-32-generic #66-Ubuntu SMP Mon Feb 13 21:04:32 UTC 2012 x86_64 GNU/Linux
+gcc version 4.4.5 (Ubuntu/Linaro 4.4.4-14ubuntu5) 
+ 
+================================= 
+ 
+Whetstone               1,136
+ 
+Dhrystones              22,727,272
+Dhrystones4C   46,922,025
+ 
+Block Writes MB/s             86 
+Block Reads MB/s            2194 
+ 
+L1 Cache MB/s                37,462 
+L2 Cache MB/s                17,454 
+L3 Cache 
+RAM MB/s                      4,693 
+ 
+PCmark05                7,475
+PCmark07                1,729
+PCmark10                  
+ 
+3Dmark03                17,805
+3Dmark05                 7,828
+3Dmark06                 4,301
+FireStrike 
+ 
+=====================
+ 
+
+Loops: 10000000, Iterations: 1, Duration: 880 sec.
+C Converted Double Precision Whetstones: 1136.4 MIPS
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      22727272.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      11627907.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      11764706.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      11764706.0 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.1 
+Dhrystones per Second:                      11764706.0 
+
+ 
+=====================
+ 
+overhead is 0 usecs
+   1.0	12567.706219
+   2.0	15565.564893
+   4.0	14136.263399
+   8.0	15863.634947
+  16.0	16893.213650
+  32.0	17462.463778
+  64.0	12454.929049
+ 128.0	9436.787946
+ 256.0	11770.796275
+ 512.0	11645.519264
+1024.0	11579.958169
+2048.0	11329.309578
+4096.0	6610.435257
+8192.0	5432.493273
+16384.0	4990.804418
+32768.0	4783.662991
+65536.0	4693.213107
+Memory		KBytes	   
+L1 Cache MB/s:	    32	17462.464
+L2 Cache MB/s:	    64	12454.929
+RAM:		  ---	4693.213
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read 
+2048	2306867	   130	    98
+4096	1153433	   138	   128
+8192	576716	   140	   120
+16384	288358	   136	   118
+32768	144179	   137	   124
+65536	72089	   137	   121
+131072	36044	   138	   120
+262144	18022	   126	   121
+	 Average Read 118 MB/s	Write 134 
+ 
+=====================
+ 

@@ -1,0 +1,125 @@
+Name HP Compaq nw8240 
+
+Date 2006/02/21
+ 
+model name	 Intel Pentium M 2.00GHz
+cpu MHz		 1995
+L1 Cache         32 KB
+L2 Cache         2048 KB
+L3 Cache 
+RAM              1 GB
+RAM Type       DDR-400
+Chipset          Mobile Intel 915PM Express 
+Disk		 Fujitsu MHt2080AH 8M Cache 80GB
+Video		 ATI Mobility Fire GL V5000 PCI Express 128 MB
+ 
+Linux floyd 2.6.14-1.1656_FC4 #1 Thu Jan 5 22:13:22 EST 2006 i686
+gcc version 4.0.2 20051125 (Red Hat 4.0.2-8)
+ 
+================================= 
+ 
+Whetstone               1777
+ 
+Dhrystones              5,434,782
+Dhrystones4C   5,423,795
+ 
+Block Writes MB/s            30 
+Block Reads MB/s             23 
+ 
+L1 Cache MB/s                11,133 
+L2 Cache MB/s                 7,173 
+L3 Cache 
+RAM MB/s                      1,306 
+ 
+PCmark05		2529
+PCmark07
+PCmark10                  
+
+3Dmark03                6138
+3Dmark05		2433 
+3Dmark06                 536
+FireStrike 
+ 
+=====================
+ 
+
+##############################################
+Whetstone Double  Precision Benchmark in C/C++
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667393454       637.613               0.537
+N2 floating point      -1.12187079889296593       666.022               3.600
+N3 if then else         1.00000000000000000                8392.845     0.220
+N4 fixed point         12.00000000000000000               156100.078     0.036
+N5 sin,cos etc.         0.49902937281515769                  38.235    38.822
+N6 floating point       0.99999987890670028       496.432              19.385
+N7 assignments          3.00000000000000000                2040.106     1.616
+N8 exp,sqrt etc.        0.75100163018458566                  18.365    36.138
+
+MWIPS                                            1777.780             100.355
+
+ 
+=====================
+ 
+
+Dhrystone Benchmark, Version 2.1 (Language: C)
+
+Single Thread
+Microseconds for one run through Dhrystone:    0.2 
+Dhrystones per Second:                      5434782.5 
+
+ 
+Multi Thread (4 thread)
+Microseconds for one run through Dhrystone:    0.7 
+Dhrystones per Second:                      1358695.6 
+
+Microseconds for one run through Dhrystone:    0.7 
+Dhrystones per Second:                      1358695.6 
+
+Microseconds for one run through Dhrystone:    0.7 
+Dhrystones per Second:                      1358695.6 
+
+Microseconds for one run through Dhrystone:    0.7 
+Dhrystones per Second:                      1347708.9 
+
+ 
+=====================
+ 
+   1.0	1996.000752
+   2.0	5121.876165
+   4.0	7157.018710
+   8.0	9000.103996
+  16.0	10336.977412
+  32.0	11133.541623
+  64.0	7871.569132
+ 128.0	7879.526968
+ 256.0	7919.269541
+ 512.0	7894.077053
+1024.0	7934.338954
+2048.0	7173.286526
+4096.0	4754.815858
+8192.0	1608.835024
+16384.0	1317.690816
+32768.0	1316.366157
+65536.0	1306.680311
+Memory		KBytes	   
+L1 Cache MB/s:	    32	11133.542
+L2 Cache MB/s:	  2048	7173.287
+RAM:		  ---	1306.680
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read 
+2048	2306867	    21	    30
+4096	1153433	    25	    30
+8192	576716	    24	    30
+16384	288358	    25	    30
+32768	144179	    25	    30
+65536	72089	    25	    30
+131072	36044	    25	    30
+262144	18022	    24	    30
+	 Average Read 30 MB/s	Write 23 
+ 
+=====================
+ 

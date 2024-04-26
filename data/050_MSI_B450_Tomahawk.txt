@@ -1,0 +1,115 @@
+Name MSI B450 Tomahawk Max
+Date 2020/05/11
+Home build
+Picture msi_b450_tomahawk.jpg
+
+Description My son built this one after extensive research.
+
+ 
+model name  AMD Ryzen 5 3600X 3.8 GHz 6C12T
+cpu MHz	 	 3,800
+RAM             32 GB  
+RAM Type    Corsair Vengeance LPX 3600 MHz C18
+Chipset     AMD B450
+Disk        Adata XPG SX8200 Pro 
+Video       Gigabyte AMD Radeon RX 5700 XT
+Case        Corsair iCue 220T RGB Tempered Glass Mid-Tower
+ 
+Linux Topographic 4.4.0-43-Microsoft #1-Microsoft Wed Dec 31 14:42:53 PST 2014 x86_64 x86_64 x86_64 GNU/Linux
+gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.6) 
+ 
+================================= 
+ 
+Whetstone                    22,222
+ 
+Dhrystones              588,235,528
+Dhrystones4C            222,222,224
+ 
+Block Writes MB/s             1,354 
+Block Reads MB/s              2,041 
+ 
+RAM MB/s                     14,965 
+ 
+PCmark07                      8,869 
+PCmark10                      6,285            
+ 
+3Dmark03                172,048
+3Dmark05                 37,010	
+3Dmark06                 32,053 
+FireStrike               21,099
+ 
+=====================
+ 
+
+Loops: 1000000, Iterations: 2, Duration: 12 sec.
+C Converted Double Precision Whetstones: 16666.7 MIPS
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      43478260.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      41666668.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      41666668.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      41666668.0 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      41666668.0 
+
+ 
+=====================
+ 
+overhead is 1 usecs
+   1.0	43500.224334
+   2.0	50343.584408
+   4.0	53616.880740
+   8.0	42205.494205
+  16.0	48924.980382
+  32.0	51651.160540
+  64.0	40003.387687
+ 128.0	40425.621882
+ 256.0	41024.536853
+ 512.0	34851.520570
+1024.0	15199.861806
+2048.0	15038.014983
+4096.0	14650.315136
+8192.0	12074.270669
+16384.0	12020.342164
+32768.0	11959.784680
+65536.0	11895.555322
+Memory		KBytes	   
+L1 Cache MB/s:	     4	53616.881
+L2 Cache MB/s:	    32	51651.161
+RAM:		 65536	11895.555
+ 
+=====================
+ 
+writing to testdir/testfile
+Block Size	Blocks	Write MB/s	Read 
+  2048		563200	   111		   491
+  4096		281600	   230		   808
+  8192		140800	   361		  1287
+ 16384		 70400	   543		  1908
+ 32768		 35200	   686		  2555
+ 65536		 17600	   721		  2923
+131072		  8800	   854		  3106
+262144		  4400	   937		  3258
+	 Average Read 2041 MB/s	Write 554 
+ 
+=====================
+ 

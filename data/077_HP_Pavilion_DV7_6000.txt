@@ -1,0 +1,45 @@
+Name Pavilion dv7
+ 
+Date 2011/05/13
+
+model name  Intel i7-2630QM 2.00GHz4C8T
+cpu MHz	 	2000
+L1 Cache          32 KB
+L2 Cache         256 KB 
+L3 Cache	6,244 KB
+RAM             8 GB 
+RAM Type
+Chipset         Intel 6 Series C200 
+Disk            Samsung HM640JJ  
+Video           ATI Radeon HD 6490M 
+Case
+
+Linux
+gcc 
+ 
+================================= 
+ 
+Whetstone               4,754
+ 
+Dhrystones               28,571,428
+Dhrystones4C   102,564,104
+ 
+Block Writes MB/s            85 
+Block Reads MB/s          2,124 
+ 
+L1 Cache MB/s              66,521 
+L2 Cache MB/s              30,236 
+L3 Cache MB/s	      22,677 
+RAM MB/s                   13,955 
+ 
+PCmark05                 8,991
+PCmark07                 2,196 
+PCmark10                  
+ 
+3Dmark03                14,368
+3Dmark05                 9,662
+3Dmark06                 6,061 
+FireStrike 
+ 
+=====================
+ 

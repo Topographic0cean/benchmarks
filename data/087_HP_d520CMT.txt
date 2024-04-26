@@ -1,0 +1,130 @@
+Name HP Compaq d530 CMT 
+ 
+Date 2006/05/17
+ 
+model name	 Intel Pentium 4 3.06GHz
+cpu MHz		 3059
+L1 Cache         8 KB
+L2 Cache         512 KB
+L3 Cache         
+RAM              2 GB
+Chipset          Intel 865G 
+Disk	         2 Segate ST340014A 40GB 7200RPM 2MB cache
+Video	      	 Matrox Milleniam G550 32MB DDR
+ 
+Linux localhost.localdomain 2.6.16.16 #1 SMP PREEMPT Tue May 16 23:00:57 PDT 2006 i686 i686 i386 GNU/Linux
+gcc version 4.1.0 20060304 (Red Hat 4.1.0-3)
+ 
+================================= 
+ 
+Whetstone               1625
+ 
+Dhrystones              5,813,953
+Dhrystones4C   6,849,315
+ 
+Block Writes MB/s            48 
+Block Reads MB/s             50 
+ 
+L1 Cache MB/s                1831 
+L2 Cache MB/s                1488 
+L3 Cache 
+RAM MB/s                     810 
+ 
+ 
+PCmark05                 
+PCmark07
+PCmark10                  
+
+3Dmark03
+3Dmark05  
+3Dmark06 
+FireStrike 
+
+=====================
+ 
+
+##############################################
+Whetstone Double  Precision Benchmark in C/C++
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667393521       637.117               0.506
+N2 floating point      -1.12187079889296659       668.181               3.380
+N3 if then else         1.00000000000000000               36233.517     0.048
+N4 fixed point         12.00000000000000000               189049.498     0.028
+N5 sin,cos etc.         0.49902937281515608                  36.235    38.586
+N6 floating point       0.99999987890670028       473.269              19.153
+N7 assignments          3.00000000000000000               18484.400     0.168
+N8 exp,sqrt etc.        0.75100163018458566                  15.066    41.495
+
+MWIPS                                            1625.794             103.365
+
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.2 
+Dhrystones per Second:                      5813953.5 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.6 
+Dhrystones per Second:                      1712328.8 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.6 
+Dhrystones per Second:                      1712328.8 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.6 
+Dhrystones per Second:                      1712328.8 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.6 
+Dhrystones per Second:                      1712328.8 
+
+ 
+=====================
+ 
+overhead is 9 usecs
+   1.0	1641.157952
+   2.0	1742.956642
+   4.0	1801.538894
+   8.0	1831.069540
+  16.0	976.683555
+  32.0	964.820082
+  64.0	956.419015
+ 128.0	1488.511657
+ 256.0	986.051040
+ 512.0	984.216867
+1024.0	959.581861
+2048.0	897.564869
+4096.0	886.400620
+8192.0	862.429985
+16384.0	864.976515
+32768.0	834.497676
+65536.0	810.098628
+Memory		KBytes	   
+L1 Cache MB/s:	     8	1831.070
+L2 Cache MB/s:	   128	1488.512
+RAM:		  ---	810.099
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read 
+2048	2306867	    49	    51
+4096	1153433	    50	    48
+8192	576716	    52	    49
+16384	288358	    52	    47
+32768	144179	    51	    49
+65536	72089	    51	    48
+131072	36044	    52	    49
+262144	18022	    51	    49
+	 Average Read 48 MB/s	Write 50 
+ 
+=====================
+ 

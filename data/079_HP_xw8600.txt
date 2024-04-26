@@ -1,0 +1,159 @@
+Name hp xw8600 
+ 
+Date 2011/05/13
+
+model name       Intel Xeon X5450 3.00GHz4C
+cpu MHz          3000
+L1 Cache         32 KB
+L2 Cache         12 MB
+L3 Cache 
+RAM               8 GB
+RAM Type
+Chipset          Intel 5400
+Disk             Western Digital WD800ADFD 3xRAID0 
+Video            nVidia Quadro FX 3500
+Case
+
+Linux neverwinter.dhcp.sdd.hp.com 2.6.35.13-91.fc14.x86_64 #1 SMP Tue May 3 13:23:06 UTC 2011 x86_64 x86_64 x86_64 GNU/Linux
+gcc version 4.5.1 20100924 (Red Hat 4.5.1-4) (GCC) 
+ 
+================================= 
+ 
+Whetstone               1,236
+ 
+Dhrystones              23,809,524
+Dhrystones4C   96,399,536
+ 
+Block Writes MB/s            127 
+Block Reads MB/s             237 
+ 
+L1 Cache MB/s                37,523 
+L2 Cache MB/s                17,362 
+L3 Cache 
+RAM MB/s                      6,090 
+ 
+PCmark05                 
+PCmark07
+PCmark10                  
+
+3Dmark03
+3Dmark05  
+3Dmark06 
+FireStrike 
+
+=====================
+ 
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU GenuineIntel, Features Code BFEBFBFF, Model Code 00010676
+  Intel(R) Xeon(R) CPU           X5450  @ 3.00GHz
+  Measured - Minimum 3000 MHz, Maximum 3000 MHz
+  Linux Functions
+  get_nprocs() - CPUs 8, Configured CPUs 8
+  get_phys_pages() and size - RAM Size  7.88 GB, Page Size 4096 Bytes
+  uname() - Linux, neverwinter.dhcp.sdd.hp.com, 2.6.35.13-91.fc14.x86_64
+  #1 SMP Tue May 3 13:23:06 UTC 2011, x86_64
+
+##########################################
+Single Precision C Whetstone Benchmark Opt 3 64 Bit, Fri May 13 14:54:13 2011
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.07 Seconds         25   Passes (x 100)
+       0.35 Seconds        125   Passes (x 100)
+       1.76 Seconds        625   Passes (x 100)
+       8.81 Seconds       3125   Passes (x 100)
+
+Use 3547  passes (x 100)
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156      1099.245              0.062
+N2 floating point     -1.12274742126464844      1083.052              0.440
+N3 if then else        1.00000000000000000                8959.246    0.041
+N4 fixed point        12.00000000000000000                4984.786    0.224
+N5 sin,cos etc.        0.49911010265350342                  87.698    3.365
+N6 floating point      0.99999982118606567       732.569              2.612
+N7 assignments         3.00000000000000000                3988.640    0.164
+N8 exp,sqrt etc.       0.75110864639282227                  42.660    3.093
+
+MWIPS                                           3546.521             10.001
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      23809524.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      24390244.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      24390244.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      23809524.0 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      23809524.0 
+
+ 
+=====================
+ 
+overhead is 0 usecs
+   1.0	26314.912534
+   2.0	31131.894704
+   4.0	34463.673069
+   8.0	35897.039162
+  16.0	37099.374373
+  32.0	37523.642720
+  64.0	17362.751250
+ 128.0	13564.875545
+ 256.0	17160.643022
+ 512.0	17184.319811
+1024.0	16725.520278
+2048.0	16757.784755
+4096.0	5453.262661
+8192.0	5345.393755
+16384.0	5278.061003
+32768.0	5349.297641
+65536.0	5090.074812
+Memory		KBytes	   
+L1 Cache MB/s:	    32	37523.643
+L2 Cache MB/s:	    64	17362.751
+RAM:		  ---	5090.075
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read 
+2048	2306867	   209	   238
+4096	1153433	   199	   237
+8192	576716	   204	   235
+16384	288358	   211	   240
+32768	144179	   214	   237
+65536	72089	   204	   236
+131072	36044	   208	   239
+262144	18022	   213	   239
+	 Average Read 237 MB/s	Write 207 
+ 
+=====================
+ 

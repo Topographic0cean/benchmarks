@@ -1,0 +1,117 @@
+Name MacBook Pro (16-inch, 2019)
+Date 2023/03/31
+ 
+ 
+ 
+ 
+ 
+
+model name  Intel Core i7 2.6 GHz 6-Core 
+cpu MHz	 	 1,400 
+RAM             32 GB 
+RAM Type    2667 MHz DDR4
+Chipset     Apple      
+Disk        APPLE SSD AP0512N
+Video       Intel UHD Graphics 630 1536 MB
+Case        Apple    
+ 
+Darwin flighty 19.6.0 Darwin Kernel Version 19.6.0: Thu Jun 18 20:49:00 PDT 2020; root:xnu-6153.141.1~1/RELEASE_X86_64 x86_64
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+ 
+================================= 
+ 
+Whetstone               9,090
+ 
+Dhrystones         52,631,580
+Dhrystones4C      200,000,000
+ 
+Block Writes MB/s       2,022
+Block Reads MB/s        1,173
+ 
+RAM MB/s               23,217
+ 
+PCmark07                0
+PCmark10                0
+ 
+3Dmark06                0
+
+GeekBench cpu single    1,356
+GeekBench cpu multi     5,755
+GeekBench gpu          26,567
+ 
+=====================
+ 
+Loops: 1000000, Iterations: 2, Duration: 22 sec.
+C Converted Double Precision Whetstones: 9090.9 MIPS
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      52631580.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      50000000.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      50000000.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      50000000.0 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      50000000.0 
+
+ 
+=====================
+ 
+overhead is 0 usecs
+   1.0	15549699.287926
+   2.0	31716801.875279
+   4.0	63796448.551751
+   8.0	114592028.335786
+  16.0	140900907.750426
+  32.0	307076382.187178
+  64.0	1027929155.450118
+ 128.0	2034474164.247513
+ 256.0	4068979372.580846
+ 512.0	8137989789.247513
+1024.0	16275968955.993654
+2048.0	24413976716.995239
+4096.0	48827976716.995239
+8192.0	97655976716.995239
+16384.0	inf
+32768.0	inf
+65536.0	inf
+131072.0	inf
+262144.0	inf
+524288.0	inf
+1048576.0	inf
+Memory		KBytes	   MB/s
+RAM:		1048576	   inf
+ 
+=====================
+ 
+writing to testdir/testfile
+Block Size	Blocks	Write MB/s	Read MB/s
+  2048		524288	   296		    50
+  4096		262144	   678		    94
+  8192		131072	  1181		   153
+ 16384		 65536	  1464		   220
+ 32768		 32768	  2022		   271
+ 65536		 16384	   738		   369
+131072		  8192	  1221		   665
+262144		  4096	  1369		  1173
+	 Max Read 1173 MB/s	Write 2022 MB/s
+ 
+=====================
+ 

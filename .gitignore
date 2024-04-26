@@ -1,0 +1,5 @@
+benchmarks.*
+report.txt
+.vscode
+*.log
+testfile

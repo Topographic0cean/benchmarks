@@ -1,0 +1,118 @@
+Name ASRock X370 Gamer X  AMD Radeon HD 7870
+Date 2018/01/30
+
+Picture asrockfatal1tyx370.jpg
+
+Description The intent is to get a CPU with the most cores and add as much RAM as feasible since I often want to run lots of virtual machines these days.   AMD is pushing cores over performance so that is the best choice and 32GB of RAM is the most I could rationalize for the price.    I went with a Radeon 7870 as a good price vs. performance value.  Overall, this build remain solid and reliable.
+ 
+model name  AMD Ryzen 7 1800X 3.6GHz 8C16T
+cpu MHz	 	 3,600
+L1 Cache        96 KB 
+L2 Cache       512 KB 
+L3 Cache    16,384 KB 
+RAM             32 GB  
+RAM Type    G.SKILL TridentZ F4-3333C16-16GTZSK DDR4
+Chipset     AMD X370  
+Disk        Samsung EVO 960 Pro 512GB     
+Video       Gigabyte AMD Radeon HD 7870 2GB GDDR5 GV-R787OC-2GD 
+Case        Enermax Ostrog ECA3253-BR ATX Mid Tower        
+ 
+Linux Topographic 4.4.0-43-Microsoft #1-Microsoft Wed Dec 31 14:42:53 PST 2014 x86_64 x86_64 x86_64 GNU/Linux
+gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.6) 
+ 
+================================= 
+ 
+Whetstone               20,181
+ 
+Dhrystones          47,619,048
+Dhrystones4C       181,913,040
+ 
+Block Writes MB/s          378
+Block Reads MB/s           603
+ 
+RAM MB/s                27,965 
+
+PCmark07                 6,242
+PCmark10                 4,867
+ 
+3Dmark06                29,734
+
+GeekBench cpu single     1,109
+GeekBench cpu multi      5,907
+GeekBench gpu           26,527
+ 
+=====================
+ 
+
+Loops: 1000000, Iterations: 2, Duration: 12 sec.
+C Converted Double Precision Whetstones: 16666.7 MIPS
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      43478260.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      41666668.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      41666668.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      41666668.0 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      41666668.0 
+
+ 
+=====================
+ 
+overhead is 1 usecs
+   1.0	43500.224334
+   2.0	50343.584408
+   4.0	53616.880740
+   8.0	42205.494205
+  16.0	48924.980382
+  32.0	51651.160540
+  64.0	40003.387687
+ 128.0	40425.621882
+ 256.0	41024.536853
+ 512.0	34851.520570
+1024.0	15199.861806
+2048.0	15038.014983
+4096.0	14650.315136
+8192.0	12074.270669
+16384.0	12020.342164
+32768.0	11959.784680
+65536.0	11895.555322
+Memory		KBytes	   
+L1 Cache MB/s:	     4	53616.881
+L2 Cache MB/s:	    32	51651.161
+RAM:		 65536	11895.555
+ 
+=====================
+ 
+writing to testdir/testfile
+Block Size	Blocks	Write MB/s	Read 
+  2048		563200	   111		   491
+  4096		281600	   230		   808
+  8192		140800	   361		  1287
+ 16384		 70400	   543		  1908
+ 32768		 35200	   686		  2555
+ 65536		 17600	   721		  2923
+131072		  8800	   854		  3106
+262144		  4400	   937		  3258
+	 Average Read 2041 MB/s	Write 554 
+ 
+=====================
+ 

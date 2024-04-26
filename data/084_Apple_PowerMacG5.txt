@@ -1,0 +1,125 @@
+Name Apple PowerMac G5 
+ 
+Date 2006/02/21
+ 
+model name	 Power Mac G5 Dual
+cpu MHz		 1800
+L1 Cache         32 KB
+L2 Cache         512 KB
+L3 Cache 
+RAM              1 GB
+Chipset          G5  
+Disk	         Seagate ST380013AS 74GB 7200RPM SATA 
+Video	         nVidia GeForce FX 5200 64MB
+ 
+Darwin ashoka.local 8.4.0 Darwin Kernel Version 8.4.0: Tue Jan  3 18:22:10 PST 2006; root:xnu-792.6.56.obj~1/RELEASE_PPC Power Macintosh powerpc
+gcc version 4.0.1 (Apple Computer, Inc. build 5247)
+ 
+================================= 
+ 
+Whetstone               1832
+ 
+Dhrystones              5,000,000
+Dhrystones4C   9,932,037
+ 
+Block Writes MB/s            33 
+Block Reads MB/s             33 
+ 
+L1 Cache MB/s                16,183 
+L2 Cache MB/s                10,329 
+L3 Cache 
+RAM MB/s                      1,269 
+ 
+PCmark05                 
+PCmark07
+PCmark10                  
+
+3Dmark03
+3Dmark05  
+3Dmark06 
+FireStrike 
+
+ 
+=====================
+ 
+
+##############################################
+Whetstone Double  Precision Benchmark in C/C++
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900       353.757               0.977
+N2 floating point      -1.12187079889284425       369.624               6.548
+N3 if then else         1.00000000000000000               14387.140     0.130
+N4 fixed point         12.00000000000000000               71749.201     0.079
+N5 sin,cos etc.         0.49902937281519744                  59.380    25.230
+N6 floating point       0.99999987890802811       300.329              32.341
+N7 assignments          3.00000000000000000                 600.628     5.540
+N8 exp,sqrt etc.        0.75100163018458665                  24.427    27.423
+
+MWIPS                                            1832.427              98.269
+
+ 
+=====================
+ 
+
+Dhrystone Benchmark, Version 2.1 (Language: C)
+
+Single Thread
+Microseconds for one run through Dhrystone:    0.2 
+Dhrystones per Second:                      5000000.0 
+
+ 
+Multi Thread (4 thread)
+Microseconds for one run through Dhrystone:    0.4 
+Dhrystones per Second:                      2493765.5 
+
+Microseconds for one run through Dhrystone:    0.4 
+Dhrystones per Second:                      2469135.8 
+
+Microseconds for one run through Dhrystone:    0.4 
+Dhrystones per Second:                      2469135.8 
+
+Microseconds for one run through Dhrystone:    0.4 
+Dhrystones per Second:                      2500000.0 
+
+ 
+=====================
+ 
+   1.0	7763.380451
+   2.0	10913.167784
+   4.0	13476.076029
+   8.0	14772.734007
+  16.0	15553.859313
+  32.0	15973.364642
+  64.0	16183.514708
+ 128.0	10411.510196
+ 256.0	10329.476911
+ 512.0	2421.133485
+1024.0	1459.807364
+2048.0	1462.871829
+4096.0	1431.630987
+8192.0	1297.177903
+16384.0	1295.199115
+32768.0	1292.320441
+65536.0	1269.325602
+Memory		KBytes	   
+L1 Cache MB/s:	    64	16183.515
+L2 Cache MB/s:	   256	10329.477
+RAM:		  ---	1269.326
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read 
+2048	2306867	    35	    36
+4096	1153433	    36	    36
+8192	576716	    36	    34
+16384	288358	    34	    34
+32768	144179	    34	    34
+65536	72089	    34	    34
+131072	36044	    34	    34
+262144	18022	    34	    34
+	 Average Read 33 MB/s	Write 33 
+ 
+=====================
+ 

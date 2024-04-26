@@ -1,0 +1,30 @@
+echo "USE neverwinter;" > benchmarks.sql
+echo "DROP TABLE IF EXISTS computers;" >> benchmarks.sql
+echo "CREATE TABLE computers ( \
+name VARCHAR(64), \
+date DATE, \
+home_build TINYINT(1), \
+picture VARCHAR(128), \
+description VARCHAR(1024), \
+cpu_name VARCHAR(64), \
+cpu_speed INT, \
+ram_type VARCHAR(64), \
+ram_size INT, \
+ram_speed INT, \
+chipset VARCHAR(64), \
+disk VARCHAR(128), \
+video VARCHAR(64), \
+case_name VARCHAR(64), \
+whetstone INT, \
+dhrystone INT, \
+dhrystonem INT, \
+block_write INT, \
+block_read INT, \
+pcmark07 INT, \
+pcmark10 INT, \
+dmark06 INT, \
+geek_cpu_single INT, \
+geek_cpu_multi INT, \
+geek_gpu INT, \
+PRIMARY KEY (name) \
+);" >> benchmarks.sql

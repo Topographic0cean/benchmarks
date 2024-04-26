@@ -1,0 +1,127 @@
+Name Shuttle XPC ST62K
+ 
+Date 2006/02/21
+Home build
+Picture shuttleft62.jpg
+Description I built this small compact computer for my wife. It overheated constantly and did not last very long. The Intel Pentium 4 CPU ran at 3.00GHz and had 512KB of L2 Cache and a front side bus running at 800 MHz. It has only 512MB of RAM. The ATI RADEON 9100 IGP video card had 32MB of video RAM and ran all of the contemporary games at a high enough level. I put a Western Digital WD2000JB-00GVA0 disk with 200GB of storage and it was plenty of room.
+ 
+model name       Intel Pentium 4 3.00GHz
+cpu MHz          2494
+L1 Cache         256 KB
+L2 Cache         512 KB
+L3 Cache 
+RAM              512 MB 
+Chipset          ATI RS300M/IXP200 
+Disk	 	 Western Digital WD2000JB-00GVA0  200GB
+Video	      	 ATI RADEON 9100 IGP  32MB
+ 
+CYGWIN_NT-5.1 Valencia 1.5.19(0.150/4/2) 2006-01-20 13:28 i686 Cygwin
+gcc version 3.4.4 (cygming special) (gdc 0.12, using dmd 0.125)
+ 
+================================= 
+ 
+Whetstone               1149
+ 
+Dhrystones              4,739,336
+Dhrystones4C   5,743,570
+ 
+Block Writes MB/s            36 
+Block Reads MB/s             42 
+ 
+L1 Cache MB/s                7,812 
+L2 Cache MB/s                1,860 
+L3 Cache 
+RAM MB/s                       843 
+ 
+PCmark05                2081
+PCmark07
+PCmark10                  
+ 
+3Dmark03                642
+3Dmark05    
+3Dmark06   
+FireStrike 
+ 
+=====================
+ 
+
+##############################################
+Whetstone Double  Precision Benchmark in C/C++
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667393521       495.663               0.412
+N2 floating point      -1.12187079889296837       350.963               4.078
+N3 if then else         1.00000000000000000                1355.685     0.813
+N4 fixed point         12.00000000000000000                 675.208     4.968
+N5 sin,cos etc.         0.49902937281509135                  33.198    26.688
+N6 floating point       0.99999987890670028       205.263              27.984
+N7 assignments          3.00000000000000000                 226.512     8.688
+N8 exp,sqrt etc.        0.75100163018458366                  20.816    19.031
+
+MWIPS                                            1149.224              92.662
+
+ 
+=====================
+ 
+
+Dhrystone Benchmark, Version 2.1 (Language: C)
+
+Single Thread
+Microseconds for one run through Dhrystone:    0.2 
+Dhrystones per Second:                      4739336.5 
+
+ 
+Multi Thread (4 thread)
+Microseconds for one run through Dhrystone:    0.8 
+Dhrystones per Second:                      1204819.2 
+
+Microseconds for one run through Dhrystone:    0.5 
+Dhrystones per Second:                      2127659.5 
+
+Microseconds for one run through Dhrystone:    0.8 
+Dhrystones per Second:                      1204819.2 
+
+Microseconds for one run through Dhrystone:    0.8 
+Dhrystones per Second:                      1206272.6 
+
+ 
+=====================
+ 
+   1.0	3028.760570
+   2.0	4593.261891
+   4.0	5782.498003
+   8.0	6650.709002
+  16.0	7265.203056
+  32.0	7617.027265
+  64.0	7812.261581
+ 128.0	7812.380791
+ 256.0	7812.340396
+ 512.0	1860.088142
+1024.0	858.535377
+2048.0	849.042669
+4096.0	846.687075
+8192.0	867.555349
+16384.0	870.030205
+32768.0	860.366662
+65536.0	843.712030
+Memory		KBytes	   
+L1 Cache MB/s:	   256	7812.340
+L2 Cache MB/s:	   512	1860.088
+RAM:		  ---	843.712
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read 
+2048	2306867	    42	    43
+4096	1153433	    37	    43
+8192	576716	    43	    42
+16384	288358	    45	    45
+32768	144179	    45	    45
+65536	72089	    47	    31
+131072	36044	    45	    29
+262144	18022	    39	    21
+	 Average Read 36 MB/s	Write 42 
+ 
+=====================
+ 

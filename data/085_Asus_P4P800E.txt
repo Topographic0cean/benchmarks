@@ -1,0 +1,133 @@
+Name Asus P4P800-E 
+ 
+Date 2004/06/03
+Home build
+Picture asusp4p.jpg	
+Description This was the first computer I built from components. The Asus motherboard had good solid reviews and worked very well.  The Intel Pentium 4 CPU ran at 3.00GHz and had 1MB of L2 Cache and a front side bus running at 800 MHz.  It had 1GB of RAM. The LeadTek NVIDIA GeForce 6800 GT AGP video card had 256MB of video RAM and ran all of the contemporary games at a high enough level.  I had two Western Digital Caviar WD1200JD 7200 RPM disk each with 120GB of storage and 8MB of cache in a RAID 0 configuration.  
+
+model name       Intel Pentium 4 3.00GHz
+cpu MHz          2998
+L1 Cache           8 KB
+L2 Cache         512 KB
+L3 Cache 
+RAM              1 GB
+Chipset          Intel 865PE Springdale 
+Disk	         2 Western Digital Caviar WD1200JD 120GB 7200RPM 8MB RAID 0 
+Video	         LeadTek NVIDIA GeForce 6800 GT 256MB AGP
+Case             Sonata
+ 
+CYGWIN_NT-5.1 hollywood 1.5.19(0.150/4/2) 2006-01-20 13:28 i686 Cygwin
+gcc version 3.4.4 (cygming special) (gdc 0.12, using dmd 0.125)
+ 
+================================= 
+ 
+Whetstone               1296
+ 
+Dhrystones              5,025,125
+Dhrystones4C   5,797,253
+ 
+Block Writes MB/s            53 
+Block Reads MB/s             68 
+ 
+L1 Cache MB/s                5,896 
+L2 Cache MB/s                1,939 
+L3 Cache 
+RAM MB/s                     1,030 
+ 
+PCmark05                 3,877
+PCmark07
+PCmark10                  
+ 
+3Dmark03                10,491
+3Dmark05                 4,590
+3Dmark06                 2,205
+FireStrike 
+ 
+=====================
+ 
+
+##############################################
+Whetstone Double  Precision Benchmark in C/C++
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667393521       601.035               0.417
+N2 floating point      -1.12187079889296837       423.874               4.141
+N3 if then else         1.00000000000000000                1664.667     0.812
+N4 fixed point         12.00000000000000000                 838.545     4.906
+N5 sin,cos etc.         0.49902937281509135                  31.973    33.985
+N6 floating point       0.99999987890670028       244.501              28.812
+N7 assignments          3.00000000000000000                 273.855     8.813
+N8 exp,sqrt etc.        0.75100163018458366                  25.804    18.828
+
+MWIPS                                            1296.739             100.714
+
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.2 
+Dhrystones per Second:                      5025125.5 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.7 
+Dhrystones per Second:                      1457726.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.7 
+Dhrystones per Second:                      1443001.5 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.7 
+Dhrystones per Second:                      1455604.1 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.7 
+Dhrystones per Second:                      1440922.2 
+
+ 
+=====================
+ 
+overhead is 15000 usecs
+   1.0	3150.145932
+   2.0	5568.543526
+   4.0	4875.552761
+   8.0	5037.791958
+  16.0	5479.479746
+  32.0	6118.439194
+  64.0	5896.936580
+ 128.0	5998.449624
+ 256.0	5896.996072
+ 512.0	1939.901221
+1024.0	998.260210
+2048.0	918.877347
+4096.0	900.405325
+8192.0	921.102083
+16384.0	1023.919307
+32768.0	997.750912
+65536.0	1030.726818
+Memory		KBytes	   
+L1 Cache MB/s:	   256	5896.996
+L2 Cache MB/s:	   512	1939.901
+RAM:		  ---	1030.727
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read 
+2048	2306867	    66	    54
+4096	1153433	    64	    55
+8192	576716	    78	    70
+16384	288358	    80	    76
+32768	144179	    74	    70
+65536	72089	    71	    36
+131072	36044	    58	    35
+262144	18022	    63	    36
+	 Average Read 53 MB/s	Write 68 
+ 
+=====================
+ 
