@@ -1,0 +1,13 @@
+apt install -y make gcc
+
+echo ""
+echo ""
+echo ""
+echo ""
+
+
+echo "export TESTDIR to be the path where the disk test shoudl take place"
+echo "then run make"
+
+
+

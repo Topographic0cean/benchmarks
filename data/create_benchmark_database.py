@@ -151,6 +151,6 @@ if len(sys.argv) < 2:
 
 computer = 0
 benchmark = parse_benchmark(sys.argv[1])
-print_mongo_benchmark(benchmark,"../benchmarks.mongo")
-print_sql_benchmark(benchmark,"../benchmarks.sql")
+print_mongo_benchmark(benchmark,"benchmarks.mongo")
+print_sql_benchmark(benchmark,"benchmarks.sql")
 

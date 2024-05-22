@@ -1,0 +1,93 @@
+Name Gigabyte B650M AORUS ELITE AX
+Date 2024/05/22
+Home build
+Picture msi_b450_tomahawk.jpg
+ 
+Description Large RAM with lots of threads to run lots of virtual machines.
+ 
+ 
+model name  AMD Ryzen 9 7900 12-Core Processor
+cpu MHz		 5,438
+RAM             64 GB        
+RAM Type    G.SKILL Trident Z5 DDR5 16GB 6000MT/s CL36-36-36-96 1.35V (F5-6000J3636F16GX2-TZ5NR) 
+Chipset     B650M    
+Disk        WD_BLACK 2TB SN850X NVMe M.2 WDS200T2XHE    
+Video       Built-in    
+Case        LIAN LI LANCOOL 216 E-ATX PC Case
+ 
+Linux ubuntu 6.8.0-31-generic 
+gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+ 
+================================= 
+ 
+Whetstone                33,333
+ 
+Dhrystones               90,909,088
+Dhrystones4C  		    363,636,352
+ 
+Block Writes MB/s         1,750
+Block Reads MB/s         17,836
+ 
+RAM MB/s                 7,205
+ 
+PCmark07                0
+PCmark10                0
+ 
+3Dmark06                0
+ 
+GeekBench cpu single     2,912
+GeekBench cpu multi     15,622
+GeekBench gpu            8,451
+=====================
+ 
+
+Loops: 1000000, Iterations: 2, Duration: 6 sec.
+C Converted Double Precision Whetstones: 33333.3 MIPS
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      90909088.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      90909088.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      90909088.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      90909088.0 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      90909088.0 
+
+ 
+=====================
+ 
+7205
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read MB/s
+  2048		524288	  1135		  5428
+  4096		262144	  1505		  9336
+  8192		131072	  1621		 13715
+ 16384		 65536	  1685		 14527
+ 32768		 32768	  1719		 15976
+ 65536		 16384	  1737		 16639
+131072		  8192	  1750		 17435
+262144		  4096	  1743		 17836
+	 Max Read 17836 MB/s	Write 1750 MB/s
+ 
+=====================
+ 

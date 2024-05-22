@@ -8,6 +8,3 @@ for file in *.txt; do
     ./create_benchmark_database.py $file
 done
 
-#mongoimport -u $DATABASE_USER -p $MONGODB_PASSWORD -d $DATABASE_USER -c computers --drop --file=benchmark_update.json
-#scp benchmarks.sql robertwalsh.net:
-#ssh robertwalsh.net /usr/local/bin/update_benchmarks.sh $HOME/benchmarks.sql

@@ -2,8 +2,8 @@
 1) Command line benchmarks
 
 Linux and Mac should run in the terminal.  Windows should run Ubuntu subsystem.
-Drop cache memory test
 
+./setup
 make
 
 
