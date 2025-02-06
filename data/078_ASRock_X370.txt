@@ -1,0 +1,95 @@
+Name ASRock X370 Gamer X GeForce RTX 4070
+Date 2023/06/22
+
+Picture asrockfatal1tyx370.jpg
+ 
+Description The intent is to get a CPU with the most cores and add as much RAM as feasible since I often want to run lots of virtual machines these days.   AMD is pushing cores over performance so that is the best choice and 32GB of RAM is the most I could rationalize for the price.  After 5 years, I upgraded the video card to an MSI GeForce RTX 4070.  Overall, this build remain solid and reliable.
+ 
+model name	 AMD Ryzen 7 1800X Eight-Core Processor
+cpu MHz	 	 3,600
+L1 Cache        96 KB 
+L2 Cache       512 KB 
+L3 Cache    16,384 KB 
+RAM             32 GB  
+RAM Type    G.SKILL TridentZ F4-3333C16-16GTZSK DDR4
+Chipset     AMD X370  
+Disk        Samsung EVO 960 Pro 512GB     
+Video       MSI nvidia GeForce RTX 4070 12GB GDDR6X 
+Case        Enermax Ostrog ECA3253-BR ATX Mid Tower        
+ 
+Linux DESKTOP-9F7UN39 5.10.16.3-microsoft-standard-WSL2 #1 SMP Fri Apr 2 22:23:49 UTC 2021 x86_64 GNU/Linux
+gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2) 
+ 
+================================= 
+ 
+Whetstone               20200
+ 
+Dhrystones              43478260
+Dhrystones4C            168478264
+ 
+Block Writes MB/s       1872
+Block Reads MB/s        11422
+ 
+RAM MB/s                   26071
+ 
+PCmark07                8832
+PCmark10                5312
+ 
+3Dmark06                29712
+ 
+GeekBench cpu single    1120
+GeekBench cpu multi     5814
+GeekBench gpu           174200
+=====================
+ 
+
+Loops: 1000000, Iterations: 2, Duration: 10 sec.
+C Converted Double Precision Whetstones: 20000.0 MIPS
+ 
+=====================
+ 
+Single Thread
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      43478260.0 
+
+ 
+Multi Thread (4 thread)
+==> ../dhrystone/dhry1.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      41666668.0 
+
+
+==> ../dhrystone/dhry2.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      43478260.0 
+
+
+==> ../dhrystone/dhry3.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      41666668.0 
+
+
+==> ../dhrystone/dhry4.log <==
+Microseconds for one run through Dhrystone:    0.0 
+Dhrystones per Second:                      41666668.0 
+
+ 
+=====================
+ 
+26071
+ 
+=====================
+ 
+Block Size	Blocks	Write MB/s	Read MB/s
+  2048		524288	  1104		  5871
+  4096		262144	   621		  8895
+  8192		131072	   626		  9962
+ 16384		 65536	   578		 10648
+ 32768		 32768	   635		 10969
+ 65536		 16384	   560		 11422
+131072		  8192	   624		 10805
+262144		  4096	  1873		 11247
+	 Max Read 11422 MB/s	Write 1872 MB/s
+ 
+=====================
+ 
