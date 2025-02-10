@@ -1,9 +1,9 @@
-Name ASRock X370 Gamer X GeForce RTX 4070
+Name ASRock X370 Gamer X 5950X
 Date 2025/02/05
 Home build
 Picture asrockfatal1tyx370.jpg
  
-Description The intent is to get a CPU with the most cores and add as much RAM as feasible since I often want to run lots of virtual machines these days.   AMD is pushing cores over performance so that is the best choice and 32GB of RAM is the most I could rationalize for the price.  After 5 years, I upgraded the video card to an MSI GeForce RTX 4070.  Overall, this build remain solid and reliable.
+Description The intent is to get a CPU with the most cores and add as much RAM as feasible since I often want to run lots of virtual machines these days. AMD is pushing cores over performance so that is the best choice and 32GB of RAM is the most I could rationalize for the price. I originally build this in 2018, and after 5 years, I upgraded the video card to an MSI GeForce RTX 4070 from a Radeon HD7878. I then upgrade the CPU in 2025 to an AMD Ryzen 9 5950X from a Ryzen 7 1800X.  Overall, this build remain solid and reliable.
  
 model name	 AMD Ryzen 9 5950X 16-Core (Vermeer)
 cpu MHz		 3,600
@@ -30,16 +30,16 @@ Dhrystones4C            285714272
 Block Writes MB/s       1168
 Block Reads MB/s        14239
  
-RAM MB/s                   15530
+RAM MB/s                15530
  
-PCmark07                0
-PCmark10                0
+PCmark07                9773 
+PCmark10                7851
  
-3Dmark06                0
+3Dmark06                48870
  
-GeekBench cpu single    0
-GeekBench cpu multi     0
-GeekBench gpu           0
+GeekBench cpu single    2185
+GeekBench cpu multi     10939
+GeekBench gpu           175315
 =====================
  
 

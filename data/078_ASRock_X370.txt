@@ -4,6 +4,7 @@ Date 2023/06/22
 Picture asrockfatal1tyx370.jpg
  
 Description The intent is to get a CPU with the most cores and add as much RAM as feasible since I often want to run lots of virtual machines these days.   AMD is pushing cores over performance so that is the best choice and 32GB of RAM is the most I could rationalize for the price.  After 5 years, I upgraded the video card to an MSI GeForce RTX 4070.  Overall, this build remain solid and reliable.
+
  
 model name	 AMD Ryzen 7 1800X Eight-Core Processor
 cpu MHz	 	 3,600
