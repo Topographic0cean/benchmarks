@@ -6,11 +6,11 @@ Picture asrockfatal1tyx370.jpg
 Description The intent is to get a CPU with the most cores and add as much RAM as feasible since I often want to run lots of virtual machines these days. AMD is pushing cores over performance so that is the best choice and 32GB of RAM is the most I could rationalize for the price. I originally build this in 2018, and after 5 years, I upgraded the video card to an MSI GeForce RTX 4070 from a Radeon HD7878. I then upgrade the CPU in 2025 to an AMD Ryzen 9 5950X from a Ryzen 7 1800X.  Overall, this build remain solid and reliable.
  
 model name	 AMD Ryzen 9 5950X 16-Core (Vermeer)
-cpu MHz		 3,600
-L1 Cache    16x 32 KB 
-L2 Cache    16x512 KB 
-L3 Cache     2x 32 MB 
-RAM         32 GB
+cpu MHz		  3,600
+L1 Cache     32KB 257GB/s   
+L2 Cache    512KB 102GB/s
+L3 Cache     64MB  32GB/s
+RAM          32GB  10.8GB/s
 RAM Type    G.SKILL TridentZ F4-3333C16-16GTZSK DDR4
 Chipset     AMD X370  
 Disk        Samsung EVO 960 Pro 512GB     
